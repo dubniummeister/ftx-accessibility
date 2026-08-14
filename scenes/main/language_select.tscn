@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://dftwliolh6j2j"]
+
+[ext_resource type="Texture2D" uid="uid://cfp1nowo8gg02" path="res://ui/language_flags/us-english.png" id="1_7dyjj"]
+[ext_resource type="Texture2D" uid="uid://xigag2s6pd80" path="res://ui/language_flags/mexican-spanish.png" id="2_n8i8h"]
+[ext_resource type="Texture2D" uid="uid://dtaa524jrvyl3" path="res://ui/language_flags/german.png" id="3_njxp2"]
+[ext_resource type="Texture2D" uid="uid://6pgh4wo7gm1p" path="res://ui/language_flags/brazil-portuguese.png" id="4_hxvbf"]
+[ext_resource type="Texture2D" uid="uid://bm8lfk26iv5xq" path="res://ui/language_flags/mandarin.png" id="5_cotnm"]
+
+[node name="LanguageSelect" type="Control" unique_id=1731127905]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=150441206]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -360.0
+offset_right = 360.0
+offset_bottom = 256.0
+grow_horizontal = 2
+mouse_filter = 1
+color = Color(0.33333334, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=508508927]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.0
+offset_right = 90.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Select a Language Here"
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect" unique_id=1593864010]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 48.0
+offset_right = 704.0
+offset_bottom = 200.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 8
+
+[node name="EnglishButton" type="Button" parent="ColorRect/GridContainer" unique_id=1876116547]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("1_7dyjj")
+icon_alignment = 1
+expand_icon = true
+
+[node name="SpanishButton" type="Button" parent="ColorRect/GridContainer" unique_id=1032537479]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("2_n8i8h")
+icon_alignment = 1
+expand_icon = true
+
+[node name="GermanButton" type="Button" parent="ColorRect/GridContainer" unique_id=1021093316]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("3_njxp2")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BrazilPortugueseButton" type="Button" parent="ColorRect/GridContainer" unique_id=1156980850]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("4_hxvbf")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MandarinButton" type="Button" parent="ColorRect/GridContainer" unique_id=276486573]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("5_cotnm")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button" type="Button" parent="ColorRect" unique_id=1936854736]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -48.0
+offset_right = 44.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "ASL Mode"

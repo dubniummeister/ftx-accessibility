@@ -1,0 +1,511 @@
+[gd_scene format=3 uid="uid://bprid11trk0dj"]
+
+[ext_resource type="Script" uid="uid://ne6y2m8kyiqs" path="res://scripts/touchscroll.gd" id="1_001j1"]
+[ext_resource type="Texture2D" uid="uid://c2axnn2qmtluj" path="res://ui/images/spirit-guides/asa_havey-sg.png" id="1_5vafy"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="1_ygj4d"]
+[ext_resource type="Texture2D" uid="uid://dx3ur0dwtkdfo" path="res://ui/images/spirit-guides/satanta-sg.png" id="2_byqcc"]
+[ext_resource type="Texture2D" uid="uid://c65f6s125e7m6" path="res://ui/images/spirit-guides/parker-sg.png" id="3_s2sug"]
+[ext_resource type="Texture2D" uid="uid://dgslqyg1knu1t" path="res://ui/images/spirit-guides/mooar-sg.png" id="4_ygj4d"]
+[ext_resource type="Texture2D" uid="uid://bfm5pjfqm07a6" path="res://ui/images/spirit-guides/marcy-sg.png" id="5_001j1"]
+[ext_resource type="Texture2D" uid="uid://lr8bbf3noflo" path="res://ui/images/spirit-guides/mackenzie-sg.png" id="6_rf05u"]
+[ext_resource type="Texture2D" uid="uid://dy41p2786cam8" path="res://ui/images/spirit-guides/reynolds-sg.png" id="7_7orsx"]
+[ext_resource type="Texture2D" uid="uid://1dpacjq2s8iq" path="res://ui/images/spirit-guides/goodnight-sg.png" id="8_pkvy1"]
+[ext_resource type="Texture2D" uid="uid://rj3jgirrdrue" path="res://ui/images/spirit-guides/britt-sg.png" id="9_1a37c"]
+[ext_resource type="Texture2D" uid="uid://r1svbep1l6et" path="res://ui/images/spirit-guides/garrett-sg.png" id="10_u8x8k"]
+[ext_resource type="Texture2D" uid="uid://clxxkvf4lh3kj" path="res://ui/images/spirit-guides/clifton-sg.png" id="11_eftjy"]
+
+[node name="MainMenu" type="Control" unique_id=433960525]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=2078085732]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+tile_scroll_hint = true
+script = ExtResource("1_001j1")
+
+[node name="Control" type="Control" parent="ScrollContainer" unique_id=1424001601]
+custom_minimum_size = Vector2(720, 1408)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=378191788]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -704.0
+offset_right = 360.0
+offset_bottom = 704.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.045652755, 0.0678606, 0.116923116, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Control" unique_id=2006911679]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -424.0
+offset_right = 336.0
+offset_bottom = -288.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.6313726, 0.06666667, 0.11764706, 1)
+
+[node name="Label" type="Label" parent="ScrollContainer/Control/ColorRect2" unique_id=690133978]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -52.0
+offset_right = 204.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Welcome to Frontier Texas!
+Please Select a Spirit Guide Below"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="ScrollContainer/Control/ColorRect2" unique_id=1138408498]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 144.0
+offset_top = 28.0
+offset_right = 325.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "What is a Spirit Guide?"
+
+[node name="SpiritGuidesLabel1" type="Label" parent="ScrollContainer/Control" unique_id=275228509]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.0
+offset_top = -256.0
+offset_right = -87.0
+offset_bottom = -228.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Comanche Empire"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Control/SpiritGuidesLabel1" unique_id=1731333574]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.5
+offset_top = 26.0
+offset_right = 1447.5
+offset_bottom = 1050.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_constants/separation = 100
+
+[node name="AsaButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer" unique_id=2052213217]
+layout_mode = 2
+texture_normal = ExtResource("1_5vafy")
+
+[node name="AsaLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/AsaButton" unique_id=1687879404]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -336.5
+offset_top = 16.0
+offset_right = 343.49994
+offset_bottom = 267.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Esihabiitu
+(Asa Havey)"
+horizontal_alignment = 1
+
+[node name="SatantaButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer" unique_id=705164496]
+layout_mode = 2
+texture_normal = ExtResource("2_byqcc")
+
+[node name="SatantaLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/SatantaButton" unique_id=1424404723]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -329.5
+offset_top = 56.0
+offset_right = 350.5
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Satanta"
+horizontal_alignment = 1
+
+[node name="SpiritGuidesLabel2" type="Label" parent="ScrollContainer/Control" unique_id=1072553290]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = -256.0
+offset_right = 269.0
+offset_bottom = -228.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Buffalo Hide Trade"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control/SpiritGuidesLabel2" unique_id=744028873]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = 26.0
+offset_right = 1445.5
+offset_bottom = 1050.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_constants/separation = 100
+
+[node name="ParkerButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2" unique_id=1076419864]
+layout_mode = 2
+texture_normal = ExtResource("3_s2sug")
+
+[node name="ParkerLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2/ParkerButton" unique_id=1703425678]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -416.50006
+offset_top = 56.0
+offset_right = 424.49994
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Cynthia Ann Parker"
+horizontal_alignment = 1
+
+[node name="MooarButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2" unique_id=831523123]
+layout_mode = 2
+texture_normal = ExtResource("4_ygj4d")
+
+[node name="MooarLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2/MooarButton" unique_id=1419493002]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -409.49994
+offset_top = 56.0
+offset_right = 431.50006
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "J. Wright Mooar"
+horizontal_alignment = 1
+
+[node name="SpiritGuidesLabel3" type="Label" parent="ScrollContainer/Control" unique_id=2104760122]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = 88.0
+offset_right = -63.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Military on the Frontier"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control/SpiritGuidesLabel3" unique_id=150197300]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.5
+offset_top = 20.5
+offset_right = 1454.5
+offset_bottom = 1044.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_constants/separation = 100
+
+[node name="MarcyButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2" unique_id=730020303]
+layout_mode = 2
+texture_normal = ExtResource("5_001j1")
+
+[node name="MarcyLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2/MarcyButton" unique_id=700795262]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -416.50006
+offset_top = 56.0
+offset_right = 424.49994
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Randolph Marcy"
+horizontal_alignment = 1
+
+[node name="MackenzieButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2" unique_id=1504941350]
+layout_mode = 2
+texture_normal = ExtResource("6_rf05u")
+
+[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2/MackenzieButton" unique_id=1629388814]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -409.49994
+offset_top = 56.0
+offset_right = 431.50006
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Ranald Mackenzie"
+horizontal_alignment = 1
+
+[node name="SpiritGuidesLabel4" type="Label" parent="ScrollContainer/Control" unique_id=818752469]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 56.0
+offset_top = 88.0
+offset_right = 293.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Cowboys and Longhorns"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control/SpiritGuidesLabel4" unique_id=1211650830]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = 20.5
+offset_right = 1453.0
+offset_bottom = 1044.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_constants/separation = 100
+
+[node name="MarcyButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=793692262]
+layout_mode = 2
+texture_normal = ExtResource("7_7orsx")
+
+[node name="MarcyLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/MarcyButton" unique_id=951924666]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -416.50006
+offset_top = 56.0
+offset_right = 424.49994
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "George Reynolds"
+horizontal_alignment = 1
+
+[node name="MackenzieButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=2144687981]
+layout_mode = 2
+texture_normal = ExtResource("8_pkvy1")
+
+[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/MackenzieButton" unique_id=964465621]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -409.49994
+offset_top = 56.0
+offset_right = 431.50006
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Charles Goodnight"
+horizontal_alignment = 1
+
+[node name="SpiritGuidesLabel5" type="Label" parent="ScrollContainer/Control" unique_id=1471681333]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 392.0
+offset_right = 100.0
+offset_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Frontier Settlements"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control/SpiritGuidesLabel5" unique_id=628017858]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -247.00002
+offset_top = 20.5
+offset_right = 2214.0
+offset_bottom = 1044.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+theme_override_constants/separation = 100
+
+[node name="MarcyButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1084150983]
+layout_mode = 2
+texture_normal = ExtResource("9_1a37c")
+
+[node name="MarcyLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MarcyButton" unique_id=1756081006]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -416.50006
+offset_top = 56.0
+offset_right = 424.49994
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Britt Johnson"
+horizontal_alignment = 1
+
+[node name="MackenzieButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=518621290]
+layout_mode = 2
+texture_normal = ExtResource("10_u8x8k")
+
+[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MackenzieButton" unique_id=1431044734]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -409.49994
+offset_top = 56.0
+offset_right = 431.50006
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Pat Garrett"
+horizontal_alignment = 1
+
+[node name="MackenzieButton2" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1672846407]
+layout_mode = 2
+texture_normal = ExtResource("11_eftjy")
+
+[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MackenzieButton2" unique_id=1329047046]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -409.49994
+offset_top = 56.0
+offset_right = 431.50006
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 85
+text = "Elizabeth Carter Clifton"
+horizontal_alignment = 1
+
+[node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=208910980 instance=ExtResource("1_ygj4d")]
+layout_mode = 1
