@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://bnl4wsnb4kkj2"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_jt3no"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_vqtrs"]
+[ext_resource type="Texture2D" uid="uid://rj3jgirrdrue" path="res://ui/images/spirit-guides/britt-sg.png" id="3_wygh2"]
+
+[node name="Britt" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jt3no")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_vqtrs")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_wygh2")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label3" type="Label" parent="." unique_id=396665216]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 408.0
+offset_right = 648.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 22
+text = "Britt Johnson shares how he began a freighting business to support his family."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="." unique_id=422614315]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 648.0
+offset_bottom = 608.0
+theme_override_font_sizes/font_size = 22
+text = "Read his story below."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="StoryRichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "How do, folks? You snuck up kinda quiet on me, didn’t you? I guess you’re the ones been asking around Fort Belknap about me – wanted to hear the legend of Britt Johnson and how I got my family back from the Comanches, right? Well, I leave the tellin’ of that story to some of the other folks around here. I got all I can handle runnin’ my business. I suppose I can tell you about how I saw an opportunity… and took it.
+
+See when I got my family back, I had to find a way to support ‘em. The Civil War was over and lots of people were coming to the frontier to settle close to the forts, and everybody needed goods hauled. The way I saw it freighting would be the lifeblood of the frontier, so I started my own freight business between Weatherford and Forts Richardson, Belknap and Griffin. It was pretty tough in the first years. Plenty of folks were ready to make it hard for a black man.
+
+But, right now business is good. I got enough work that I need to get more wagons and I got some pretty good men out there driving for me. Even if it’s just a big old freighting wagon behind a team of mules, I’m helpin’ to change the frontier into the kind of place where folks can make a go of it in the world.
+
+We haul plenty of stuff you’d expect… lumber, flour, just about anything folks need that they can’t grow or make themselves. Corn’s one of the main loads…for horse feed. Corn fed cavalry horses are faster than grass fed Indian ponies.
+
+[Dog barks] Okay, Red I’m coming. That’s my dog, Red, I call him that because I got him up on the Red River.
+
+A man has to make a stand for the things he believes in. Me, I believe in the future of this part of Texas and I’m proud to be workin’ to build it.
+
+Now you don’t mind if I get back to work, do you? They’re expecting me over at Jacksboro just three days from now. Take care."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "BRITT JOHNSON"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Former Slave and Teamster"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

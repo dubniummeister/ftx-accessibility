@@ -1,18 +1,148 @@
 [gd_scene format=3 uid="uid://dftwliolh6j2j"]
 
 [ext_resource type="Texture2D" uid="uid://cfp1nowo8gg02" path="res://ui/language_flags/us-english.png" id="1_7dyjj"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="1_n8i8h"]
+[ext_resource type="Script" uid="uid://cq8vfbq6ib6no" path="res://scenes/main/language_select.gd" id="1_njxp2"]
 [ext_resource type="Texture2D" uid="uid://xigag2s6pd80" path="res://ui/language_flags/mexican-spanish.png" id="2_n8i8h"]
 [ext_resource type="Texture2D" uid="uid://dtaa524jrvyl3" path="res://ui/language_flags/german.png" id="3_njxp2"]
 [ext_resource type="Texture2D" uid="uid://6pgh4wo7gm1p" path="res://ui/language_flags/brazil-portuguese.png" id="4_hxvbf"]
 [ext_resource type="Texture2D" uid="uid://bm8lfk26iv5xq" path="res://ui/language_flags/mandarin.png" id="5_cotnm"]
+
+[sub_resource type="Animation" id="Animation_hxvbf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(720, 256)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinimizeButton:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(632, 208)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollapseControl:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(720, 256)]
+}
+
+[sub_resource type="Animation" id="Animation_cotnm"]
+resource_name = "collapse"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, 256), Vector2(720, 48)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinimizeButton:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(632, 208), Vector2(632, 8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollapseControl:size")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, 256), Vector2(720, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_l7kwk"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, 48), Vector2(720, 256)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinimizeButton:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(632, 8), Vector2(632, 208)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollapseControl:size")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(720, 0), Vector2(720, 256)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xb0ru"]
+_data = {
+&"RESET": SubResource("Animation_hxvbf"),
+&"collapse": SubResource("Animation_cotnm"),
+&"open": SubResource("Animation_l7kwk")
+}
 
 [node name="LanguageSelect" type="Control" unique_id=1731127905]
 layout_mode = 3
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
+offset_left = -360.0
+offset_right = 360.0
+offset_bottom = 256.0
 grow_horizontal = 2
 mouse_filter = 1
+script = ExtResource("1_njxp2")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=150441206]
 layout_mode = 1
@@ -26,6 +156,99 @@ grow_horizontal = 2
 mouse_filter = 1
 color = Color(0.33333334, 0, 0, 1)
 
+[node name="CollapseControl" type="Control" parent="ColorRect" unique_id=1151006121]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -128.0
+offset_right = 360.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect/CollapseControl" unique_id=1593864010]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = -76.0
+offset_right = 344.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(344, 0)
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 8
+
+[node name="EnglishButton" type="Button" parent="ColorRect/CollapseControl/GridContainer" unique_id=1876116547]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("1_7dyjj")
+icon_alignment = 1
+expand_icon = true
+
+[node name="SpanishButton" type="Button" parent="ColorRect/CollapseControl/GridContainer" unique_id=1032537479]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("2_n8i8h")
+icon_alignment = 1
+expand_icon = true
+
+[node name="GermanButton" type="Button" parent="ColorRect/CollapseControl/GridContainer" unique_id=1021093316]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("3_njxp2")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BrazilPortugueseButton" type="Button" parent="ColorRect/CollapseControl/GridContainer" unique_id=1156980850]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("4_hxvbf")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MandarinButton" type="Button" parent="ColorRect/CollapseControl/GridContainer" unique_id=276486573]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(75, 70)
+layout_mode = 2
+icon = ExtResource("5_cotnm")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button" type="Button" parent="ColorRect/CollapseControl" unique_id=1936854736]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -41.854996
+offset_right = 44.0
+offset_bottom = -10.854996
+grow_horizontal = 2
+grow_vertical = 0
+text = "ASL Mode"
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=1007149292]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 48.0
+color = Color(0.33333334, 0, 0, 1)
+
 [node name="Label" type="Label" parent="ColorRect" unique_id=508508927]
 layout_mode = 1
 anchors_preset = 5
@@ -35,70 +258,22 @@ offset_left = -90.0
 offset_right = 90.0
 offset_bottom = 23.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_n8i8h")
 theme_override_font_sizes/font_size = 30
 text = "Select a Language Here"
 
-[node name="GridContainer" type="GridContainer" parent="ColorRect" unique_id=1593864010]
+[node name="MinimizeButton" type="Button" parent="ColorRect" unique_id=453374207]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 48.0
-offset_right = 704.0
-offset_bottom = 200.0
-theme_override_constants/h_separation = 10
-theme_override_constants/v_separation = 10
-columns = 8
+offset_left = 632.0
+offset_top = 208.0
+offset_right = 706.0
+offset_bottom = 239.0
+toggle_mode = true
+text = "Collapse"
 
-[node name="EnglishButton" type="Button" parent="ColorRect/GridContainer" unique_id=1876116547]
-custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(75, 70)
-layout_mode = 2
-icon = ExtResource("1_7dyjj")
-icon_alignment = 1
-expand_icon = true
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=1963006032]
+libraries/ = SubResource("AnimationLibrary_xb0ru")
 
-[node name="SpanishButton" type="Button" parent="ColorRect/GridContainer" unique_id=1032537479]
-custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(75, 70)
-layout_mode = 2
-icon = ExtResource("2_n8i8h")
-icon_alignment = 1
-expand_icon = true
-
-[node name="GermanButton" type="Button" parent="ColorRect/GridContainer" unique_id=1021093316]
-custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(75, 70)
-layout_mode = 2
-icon = ExtResource("3_njxp2")
-icon_alignment = 1
-expand_icon = true
-
-[node name="BrazilPortugueseButton" type="Button" parent="ColorRect/GridContainer" unique_id=1156980850]
-custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(75, 70)
-layout_mode = 2
-icon = ExtResource("4_hxvbf")
-icon_alignment = 1
-expand_icon = true
-
-[node name="MandarinButton" type="Button" parent="ColorRect/GridContainer" unique_id=276486573]
-custom_minimum_size = Vector2(100, 100)
-custom_maximum_size = Vector2(75, 70)
-layout_mode = 2
-icon = ExtResource("5_cotnm")
-icon_alignment = 1
-expand_icon = true
-
-[node name="Button" type="Button" parent="ColorRect" unique_id=1936854736]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -40.0
-offset_top = -48.0
-offset_right = 44.0
-offset_bottom = -17.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "ASL Mode"
+[connection signal="pressed" from="ColorRect/CollapseControl/GridContainer/EnglishButton" to="." method="_on_english_button_pressed"]
+[connection signal="pressed" from="ColorRect/CollapseControl/GridContainer/SpanishButton" to="." method="_on_spanish_button_pressed"]
+[connection signal="toggled" from="ColorRect/MinimizeButton" to="." method="_on_minimize_button_toggled"]

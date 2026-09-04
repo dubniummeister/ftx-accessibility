@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://c2uopntjirxi1"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_k3eoi"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_vclft"]
+[ext_resource type="Texture2D" uid="uid://c65f6s125e7m6" path="res://ui/images/spirit-guides/parker-sg.png" id="3_h75vu"]
+
+[node name="Parker" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k3eoi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_vclft")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_h75vu")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1829894202]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 386.0
+offset_right = 680.0
+offset_bottom = 736.0
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "VALUE OF THE BUFFALO"
+
+[node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "BUFFALO AS A WAY OF LIFE"
+
+[node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "LIFE AFTER THE BUFFALO IS GONE"
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "“Haa haits.” Though I was born in the world of the Whites, I am Comanche. My life with the Numunuu is everything, and the mainstay of our lives will always be the buffalo. We know this. We eat its meat fresh and also dried. The skins we use for robes and saddles and shelter. We make shields stronger than the white man’s bullets. We sew as many as 15 buffalo skins together to make our tipis. The fur is woven into ropes or made into pillows. Even the buffalo’s teeth become a rattle for my baby, Quanah."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Some of the things we got from the Whites were good. Arrowheads made from iron were stronger than stone. Cloth was warm and light and protected us in the winter. Comancheros came from Santa Fe to sell us these goods, and we traded them captives and buffalo robes. But nothing that the White man did with the buffalo was good.
+
+Though we believed that the buffalo of Texas would be only for the Indians, White hunters still came onto the plains. They killed only for the hides, racing to kill the buffalo before other hunters could kill and skin them. We know that unless the hunters are stopped, the buffalo will soon be gone.
+"
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "For the Numunuu, winter used to be a good time. Buffalo were in their prime in the late Fall, and we stocked up for winter when their coats were thick and their meat was fat.
+
+With each season it grows harder to find the buffalo. Now, the winter is called, “the time our babies cry for food.” And without the buffalo, my people do not know any way to live. We can only starve, or go to the reservations."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "CYNTHIA ANN PARKER"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Captive turned Comanche"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

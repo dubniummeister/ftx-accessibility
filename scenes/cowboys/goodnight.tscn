@@ -1,0 +1,403 @@
+[gd_scene format=3 uid="uid://ifoddedmcu6o"]
+
+[ext_resource type="Script" uid="uid://btu8sk2heie3g" path="res://scripts/spirit-guides/spiritguide-6choiceicons.gd" id="1_72p3n"]
+[ext_resource type="Script" uid="uid://ne6y2m8kyiqs" path="res://scripts/touchscroll.gd" id="2_grrrx"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="3_0hxl2"]
+[ext_resource type="Texture2D" uid="uid://1dpacjq2s8iq" path="res://ui/images/spirit-guides/goodnight-sg.png" id="4_efo1i"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="5_okp4o"]
+[ext_resource type="Texture2D" uid="uid://ng0d6s8j1pe2" path="res://ui/images/cowboys_longhorns/brand.png" id="5_pw1ri"]
+[ext_resource type="StyleBox" uid="uid://bytl1uakg2cys" path="res://resources/spirit-guide_button-style.tres" id="6_0j8ow"]
+[ext_resource type="Texture2D" uid="uid://dyrv2kx4ulqhc" path="res://ui/images/cowboys_longhorns/bison.png" id="6_okp4o"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="10_4o1x8"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_o7ab2"]
+file = "res://videos/bass_pro_shops_pyramid.ogg"
+
+[node name="Mackenzie" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_72p3n")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1447944778]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 1280.0
+script = ExtResource("2_grrrx")
+
+[node name="Control" type="Control" parent="ScrollContainer" unique_id=1391437464]
+custom_minimum_size = Vector2(720, 1488)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -672.0
+offset_right = 360.0
+offset_bottom = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=1731127905 instance=ExtResource("3_0hxl2")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control" unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 424.0
+offset_right = 261.89844
+offset_bottom = 704.0
+texture = ExtResource("4_efo1i")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Control" unique_id=398690569]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 376.0
+offset_right = 704.0
+offset_bottom = 752.0
+theme_override_constants/separation = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=1829894202]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "HOW I GOT STARTED"
+autowrap_mode = 2
+
+[node name="OptionButton2" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "MAKING OF A SCOUT"
+autowrap_mode = 2
+
+[node name="OptionButton3" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "FIRST TRAIL DRIVE"
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=2137600233]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton4" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=739832154]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "SECOND DRIVE"
+autowrap_mode = 2
+
+[node name="OptionButton5" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=1708884724]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "ROCK CANYON RANCH"
+autowrap_mode = 2
+
+[node name="OptionButton6" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=496742721]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_styles/normal = ExtResource("6_0j8ow")
+text = "THE OLD HOME RANCH"
+autowrap_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control" unique_id=1208265148]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = 16.0
+offset_right = 132.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HandButton" type="TextureButton" parent="ScrollContainer/Control/HBoxContainer2" unique_id=1842419173]
+custom_maximum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("5_pw1ri")
+stretch_mode = 5
+
+[node name="TexasButton" type="TextureButton" parent="ScrollContainer/Control/HBoxContainer2" unique_id=1667265316]
+custom_maximum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("6_okp4o")
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="ScrollContainer/Control" unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Control" unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 160.0
+offset_right = 328.0
+offset_bottom = 712.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="TextControl" type="Control" parent="ScrollContainer/Control/ColorRect2" unique_id=1836765169]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "In 1856, my step brother Wes Sheek and I partnered together in a contract with Mr. Claiborne Varner to take his herd of about 430 head, mostly cows, and keep them on shares for 10 years. We could graze them wherever we wanted. And for our pay, we got every fourth calf that was dropped. Over time we drifted those cows from the Waco area northwest of the Brazos Valley, where we grazed them for a good while. At first, there was no market for calves so I began freighting while Wes remained with the herd. Hauling freight allowed me to be in the open country, where I felt most at home."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "The Civil War was hard on settlers on the frontier. The men died on the battlefields, and the women and children suffered the increasing threat of Indian raids. I quickly learned what every good scout and plainsman needs to know to survive that harsh and unforgiving land. As a result, I was called upon to serve as an Indian scout for the rangers across much of this area. In December of 1860, during the skirmish of Pease River, I discovered a blue eyed squaw that I later understood to be Cynthia Ann Parker."
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "When I was about 22 years old, I met a merchant and whip-smart cowman named Mr. Oliver Loving who at the time was more than 20 years my senior. We went into business together, after the war, trailing cattle to buyers out west and mainly supplying beef to the government for the new Apache reservations. In 1866, Oliver and I combined our herds and drove about 2,000 head to Fort Sumner in New Mexico territory. We lost over 400 head crossing the Llano Estacado, the graveyard of the cowman’s hopes. Oliver took the beef that didn’t sell to Fort Sumner and pushed them on to Denver, while I went back home and round up the next herd."
+
+[node name="Option4RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=115317647]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "On our second drive in the late fall of 1866, Oliver and I worked out a way of crossing the Staked Plains, the Llano Estacado, without any loss of stock. On his way to Fort Sumner, to tell them that we would be delayed, Oliver was bushwhacked by Comanches. And he later died of his wounds. I promised to take care of his family and bring his body back to Texas. I kept both of those promises."
+
+[node name="Option5RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=435668523]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I worked herds up and along our cattle trail for nearly a decade, extending that trail as far as Wyoming and beyond. In 1869, after I settled up with Mr. Loving’s family, I moved my headquarters from Weatherford to Pueblo, Colorado. That region offered a fine sheltered canyon along the Arkansas River. Soon after, I married Mary Ann Dyer - though most people called her Molly - a Tennessean of high breeding who was teaching school in Weatherford. We moved her in right away to that place in Pueblo and called it Rock Canyon Ranch."
+
+[node name="Option6RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=19970598]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "In 1872, the railroad came through southern Colorado. I made good money there but things were closing in on me. The next year, the cattle market dried up just as quick as the land did.
+
+The Texas Panhandle was being cleared of the buffalo and Comanche but the land was still fat. And better yet, it was still remote. We scouted it and found a promising place in Palo Duro Canyon. A new ranch in Texas, the first of its kind in the panhandle, would be a good venture."
+
+[node name="HandRichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=957451602]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "After moving my operations to the Texas Panhandle, I became partners with a well-turned Irish business man by the name of John Adair. In 1877, we created the JA Ranch and drove our first herd to market at Dodge City in 1878. The next year, I built Mary a house worthy of her. Within the first five year contract, we grew that ranch to 93,000 acres and we did so well we agreed to sign a new contract for five more years. By 1885, the JA had reached a maximum of just over 1.3 million acres where we grazed more than a hundred thousand head of carefully bred cow."
+
+[node name="TexasRichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2/TextControl" unique_id=2006305211]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 628.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I’ve always gotten along with animals, and the buffalo were getting wiped out while we sat by and watched. Mary was the first to act. She instructed the cowhands to bring in orphans. We started with a big bull, Old Sikes, and set him up with enough buffalo cows to keep the line going to this day. We even tried crossing them with beef cows - Cattalo we called them - but they seemed to combine the worst of both breeds, so we gave that up."
+
+[node name="VideoControl" type="Control" parent="ScrollContainer/Control/ColorRect2" unique_id=1906668314]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ScrollContainer/Control/ColorRect2/VideoControl" unique_id=743259343]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 648.0
+offset_bottom = 368.0
+stream = SubResource("VideoStreamTheora_o7ab2")
+
+[node name="Label" type="Label" parent="ScrollContainer/Control" unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -472.0
+offset_right = 55.0
+offset_bottom = -424.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_okp4o")
+theme_override_font_sizes/font_size = 32
+text = "CHARLES GOODNIGHT"
+
+[node name="Label2" type="Label" parent="ScrollContainer/Control" unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -416.0
+offset_right = 49.0
+offset_bottom = -384.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_4o1x8")
+theme_override_font_sizes/font_size = 22
+text = "Insert Flavor Text Here"
+
+[node name="LeftButton" type="Button" parent="ScrollContainer/Control" unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="ScrollContainer/Control" unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton4" to="." method="_on_option_button_4_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton5" to="." method="_on_option_button_5_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton6" to="." method="_on_option_button_6_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer2/HandButton" to="." method="_on_hand_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer2/TexasButton" to="." method="_on_texas_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/ExitButton" to="." method="_on_exit_button_pressed"]

@@ -1,0 +1,204 @@
+[gd_scene format=3 uid="uid://tvd6bcftxf7w"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_rjpjc"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_8x2wn"]
+[ext_resource type="Texture2D" uid="uid://dgslqyg1knu1t" path="res://ui/images/spirit-guides/mooar-sg.png" id="3_rjpjc"]
+
+[node name="Mooar" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rjpjc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_8x2wn")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_rjpjc")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1829894202]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 386.0
+offset_right = 680.0
+offset_bottom = 736.0
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "VALUE OF THE BUFFALO"
+
+[node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "BUFFALO AS A WAY OF LIFE"
+
+[node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "LIFE AFTER THE BUFFALO IS GONE"
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I was just a big kid off the farm when I moved to Kansas in 1870 from back East. Keeping the railroad crews in meat by killing a few buffalo was a way I could make a living, so that’s what I did. We sold a few hides for lap robes, but there wasn’t much demand. One day, I had an idea that would change all that. I sent a few hides to my brother back in New York to see if the commercial tanneries would buy them to make leather.
+
+I thought I walked into a gold mine. He got an order for 2,000 hides! He quit his job, came to Kansas, and we started killing buffalo. So did everybody else, when they figured what we were doing.
+
+Good hunting outfits could make a lot of money. Within a year, there were hundreds of those outfits all across the Plains. We killed them shaggies by the tens of thousands… even millions, I guess."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Back then, we didn’t think the great buffalo herds could be wiped out. Once, I saw a herd north of here that was seven or eight miles wide - maybe a hundred miles long. There were millions of them!
+
+But with 3,000 buffalo hunters in Kansas, it didn’t take long before it seemed like there were more hunters than buffalo. I wanted to move south to Texas. We’d heard that the Medicine Lodge Treaty reserving the Texas herd for the Indians, so we went to the commanding officer of Fort Dodge, and asked what would happen to a buffalo hunter if he crossed the Canadian River into Texas to hunt. “Boys,” the Colonel told us “If I was a buffalo hunter I’d go where the buffalo are.”
+
+The government didn’t outright say it, but its intention was to let us kill the buffalo to cripple the Indians’ independence. Without buffalo, the Indians would have to live on reservations and take government handouts just to keep from starving.
+
+It was money to us – it was our livings -- so with Charlie Rath and others providing supplies, myself, Bat Masterson and Billy Dixon leading the way, we headed for Texas."
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Well now, them bunches of shaggies are smaller and smaller --- and further apart. I can hunt for days without seeing any buffalo. I can’t afford to keep paying these skinners, if there’s nothing to skin. But buffalo was brought me and old Pete Snyder to this fine piece of Texas. Pete’s done well as a merchant, even has a town named after him. I figure building a cattle ranch would make a good life’s work for me. Without the buffalo, this grass could provide for a lot of cattle, so I think I’m going to give that a go. I reckon it’s a good thing I hung onto the money I made."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "J. WRIGHT MOOAR"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Buffalo Hunter"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

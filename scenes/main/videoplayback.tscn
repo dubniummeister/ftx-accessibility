@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cmtfr4yv8bgcj"]
+
+[ext_resource type="Script" uid="uid://c08f7qs7yv6xs" path="res://scripts/video_stream_player.gd" id="1_x23uo"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_00ugu"]
+
+[node name="VideoPlayback" type="Control" unique_id=1303729484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=519110720]
+layout_mode = 0
+offset_left = 720.0
+offset_right = 2000.0
+offset_bottom = 720.0
+rotation = 1.5707964
+stream = SubResource("VideoStreamTheora_00ugu")
+autoplay = true
+expand = true
+script = ExtResource("1_x23uo")
+
+[node name="PauseButton" type="Button" parent="." unique_id=396709987]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -24.0
+offset_right = 87.0
+offset_bottom = 7.0
+grow_vertical = 2
+rotation = 1.5707964
+text = "Pause"
+
+[node name="FullscreenToggleButton" type="Button" parent="." unique_id=338785976]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 64.59509
+offset_top = -120.0
+offset_right = 184.5951
+offset_bottom = -56.0
+grow_vertical = 0
+rotation = 1.5707964
+text = "Exit Fullscreen"
+
+[connection signal="button_down" from="PauseButton" to="VideoStreamPlayer" method="_on_pause_button_button_down"]

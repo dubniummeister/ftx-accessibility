@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://bymk1ur1tossk"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_rqb3r"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_0bkbm"]
+[ext_resource type="Texture2D" uid="uid://clxxkvf4lh3kj" path="res://ui/images/spirit-guides/clifton-sg.png" id="3_rqb3r"]
+
+[node name="Satanta" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rqb3r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_0bkbm")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_rqb3r")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label3" type="Label" parent="." unique_id=396665216]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 408.0
+offset_right = 648.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 22
+text = "Elizabeth Carter Clifton shares her lifetime of hardship and adversity on the frontier."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="." unique_id=422614315]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 648.0
+offset_bottom = 608.0
+theme_override_font_sizes/font_size = 22
+text = "Read her story below."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="StoryRichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Don’t think your staring’s gonna bother me. If you’re looking for a place to stay, I’m all full up. But if you’re looking for dinner, I got stew on the stove and plates for twenty.
+
+Running a boarding house looks like hard work, don’t it? I’ll tell you though, this is easy compared to my first years on the frontier. I come here from Alabama when I was 16. Me and my new husband – he weren’t white – we come to this raw old Texas frontier. We were way out by ourselves and folks got to stopping by for a meal or to spend the night. Spite I couldn’t read or write, we started the Carter Trading House. We prospered. In fact, we done real good. Started a ranch.
+
+Then one night, a man shot my husband. Murdered him. Killed my father-in-law while he was at it. Course no lawman came to try to catch the outlaw. It would have been a 100-mile ride and nobody cared enough to do that.
+
+My goodness, times was hard then. There was just a few families scattered in that wilderness between the Clear Fork and the Brazos. We mostly lived in dugouts, just holes in the ground, and sometimes picket houses with dirt floors. When the men folks away, women and children were left alone and it was up to us to protect ourselves against the Indians and outlaws. I remarried a military man, a lieutenant. He went out to check on our horses one day and just never came back. I suppose Indians or the outlaws got him. One was bad as the other. No, white outlaws was worse, cause you couldn’t tell they was bad just by looking.
+
+The Butterfield Stage started coming by my place, and I done real good off that trade. Married again, too. An Irish cowboy. He was a funny man. But a feller killed him too, right out in our pasture. You know I suppose the worst thing that happened to me was being captured by the Indians. They was Kiowas mostly led by a fellow named Sunboy, came on a big raid. They killed my daughter, Susanna, and her baby boy. Took me and my thirteen year old boy and my two granddaughters, Lottie and Milly. Drug us off through the brush. My boy, my boy was sick, couldn’t keep up, so they killed him before we barely got started. Poor Milly, she was just a little girl, she starved to death the first winter in the Indian camps. Lottie and me, we hung on. They branded Lottie – marked a circle right up on her forehead. It was a fight every day to stay alive. Wonders never cease, some troopers traded for us when the band was up in Kansas. To get home from there, I hired out to drive a mule team to Texas. Took two months to make that trip, but Lottie and me was finally back home after two horrible years.
+
+Lottie grew up, she married the sheriff at Fort Griffin. They moved up to Tascosa, up in the Panhandle, where he was sheriff. It was a rough place. Lottie died there, poor thing, just 26 years old. I never did know what killed her. Well, after that I hooked up with an old buffalo hunter, and that marriage lasted 11 years fore he died. Since then, it’s just me, pretty much living hand to mouth, helping run this boarding house in Griffin. I’m not a complainer but if I’d known what 50 years on the Texas frontier would really be like, I might’ve just stayed in Alabama!
+
+I got to get back to work now. Maybe I’ll see you about suppertime."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 138.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "ELIZABETH CARTER CLIFTON"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Captive who Escaped"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

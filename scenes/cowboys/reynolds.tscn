@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://dwkh4rkmlrdj0"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_8ange"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_1sywm"]
+[ext_resource type="Texture2D" uid="uid://dy41p2786cam8" path="res://ui/images/spirit-guides/reynolds-sg.png" id="3_vvlfn"]
+
+[node name="Reynolds" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ange")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_1sywm")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_vvlfn")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1829894202]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 386.0
+offset_right = 680.0
+offset_bottom = 736.0
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "SURVIVING A NIGHT STAMPEDE"
+
+[node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "PIONEERING THE CATTLE DRIVE BUSINESS"
+
+[node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "FIGHTING OUTLAWS AND INDIANS"
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I’ll tell you what – there was nothing worse than a night stampede. We all went through it one time or another. When a big electrical storm rolled in on your herd at night, you could see the electricity glowing green on the cattle’s horns and the horse’s ears.
+
+And when the cattle get nervous, anything can set ‘em running – charging blind across the prairie so all you can do is try to ride faster – hope your horse doesn’t trip in a prairie dog hole. You’re riding hell for leather and all you can see is the sparks from your horse’s hooves striking rocks. If you’re lucky, you get in front and turn the leaders back into the herd, so that they all begin to slow down and mill.
+
+A whole night of that and you’re so tired you can hardly sit a saddle, but come first light you start ‘em heading back to the trail, just hoping all your friends are still alive and that you haven’t lost a lot of cattle."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "After the Civil War, with no money on the frontier but lots of cattle, I took two men from the Clear Fork country and we drove a herd 600 miles to Fort Sumner in New Mexico. Because of the Indian danger and a lack of water, we skirted around the Comancheria by following the old Butterfield Stage Road across the Texas prairie to the Pecos River and on into New Mexico. My friends Charles Goodnight and Oliver Loving later made this route famous with their drives. And in fact, I was on the cattle drive with those boys when the Indians killed Mr. Loving. My brother helped Charlie and Bose Ikard bring his body back to Weatherford to be buried.
+
+Indians, weather, stampedes…it was dangerous work. Cattle worth $3 around here were worth ten times that in New Mexico or Kansas, but trail driving was a tough job.
+
+Our goal was to get the cattle to market, collect the money and try to get home without getting robbed or killed.
+
+I was young … 25, maybe…but many of the cowboys weren’t even 18 years old. They made $40 a month for their hard work and the risks they took. That kind of money could stake you to a new life, here on the frontier."
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Outlaws and Indians were a danger wherever you went. Families in the region sometimes had to fort up for mutual protection. In one fight with Comanches on the Double Mountain Fork of the Brazos, I was shot in the belly with an arrow. One of my pals killed and scalped the warrior who got me.
+
+That arrow was stuck in me so hard that my brothers broke the shaft off trying to pull it out. It looked like I was going to die, but I didn’t. About 15 years later, I was in Kansas City and a surgeon cut that steel arrow point out of me. In fact, I still have the arrowhead. Sure feels better on the outside of my belly than on the inside."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "GEORGE REYNOLDS"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Trail Driver"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

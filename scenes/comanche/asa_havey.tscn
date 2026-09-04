@@ -1,0 +1,227 @@
+[gd_scene format=3 uid="uid://bf3uk2ox75a7m"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_25li2"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="1_mwyp4"]
+[ext_resource type="Texture2D" uid="uid://c2axnn2qmtluj" path="res://ui/images/spirit-guides/asa_havey-sg.png" id="2_25li2"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="4_m5570"]
+[ext_resource type="StyleBox" uid="uid://bytl1uakg2cys" path="res://resources/spirit-guide_button-style.tres" id="5_ttgrp"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="6_lfvs8"]
+
+[node name="AsaHavey" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_25li2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("1_mwyp4")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("2_25li2")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1829894202]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 386.0
+offset_right = 680.0
+offset_bottom = 736.0
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_m5570")
+theme_override_styles/normal = ExtResource("5_ttgrp")
+text = "MY PEOPLE"
+
+[node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_m5570")
+theme_override_styles/normal = ExtResource("5_ttgrp")
+text = "CONFLICT WITH THE WHITES"
+
+[node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_m5570")
+theme_override_styles/normal = ExtResource("5_ttgrp")
+text = "FACING THE FUTURE"
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_m5570")
+theme_override_font_sizes/normal_font_size = 20
+text = "\"Haa Haits\"! Hello, friend. Since long, long ago, Indians have come to the banks of the Concho River - which we call \"ebi hunubi\", Blue river - to camp, because it gives us water, wood, and a long rock cliff to protect us from the wind. While they were camped here, the Indians used their paints to tell their stories on the cliffs of Paint Rock. In this place are stories, some from tribes and languages long forgotten, pictures of the old ways, hunting the buffalo in the time before the horse, stalking him on foot with bow and arrow... Talking to the sun, Our Father, and asking for \"puha\", the medicine power that makes us strong.
+
+The paintings here and at other places on the Plains were drawn to remind us of our stories. We made no written words. Our stories are passed from generation by word of mouth. From old to young we tell these stories in the long nights of winter at places like this one, places that breathe with the history of our people."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_m5570")
+theme_override_font_sizes/normal_font_size = 20
+text = "[Wolf howling] Haa, tell me some good news, brother!
+The Taibos, or Whites, know my tribe as the Comanches, but since the beginning of time, we called ourselves the Numunuu, which means ‘all of us,’ or Our People.  We were always hunters and warriors, and once we became masters of horses we grew in numbers and strength, and we took the Plains of Texas as our own.
+
+Our People fought bravely to keep the Spanish soldiers and priests from marking the Plains with their footprints.  The Numunuu also blocked the Mexicans and the French, the Texans too – for almost 100 winters we kept them from claiming our lands.  Nobody crossed West Texas unless we willed it.
+
+I do not know yet the end of this story between the Numunuu and the Whites, but even if the day comes when we no longer live free, we should be remembered with respect for our way of living.
+"
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_m5570")
+theme_override_font_sizes/normal_font_size = 20
+text = "In my time, even as Our People are put on reservations or retreat to the canyons of the High Plains, the paintings on the rocks - and the stories they tell - are still being made.
+
+We paint newer pictures among the ancient ones, showing how our paths cross with the paths of the Whites.
+
+Back in my grandfather's time, the Comanche rode with the Wichitas to burn the spirit house of the taibos at San Saba River, what we call tsuku kahni hunubi, or \"old house river.\" The ruins still stand. But the taibos have a bigger spirit house south of here at a place they call San Antonio.
+
+Those taibos believe in a bad spirit who looks like a white man with horns and a tail, who tells them to do bad things. Sometimes I think the taibos listen too much to their bad spirit.
+
+Yes, we have fought to keep our land and way of life. But I see that our old ways of raiding and taking captives must change. Now I try to stop these things among My People. I cannot decide this by myself. We must have a council with a great many speeches and everyone must all agree. Everyone. Now I argue for peace with the Whites, but I do not wish us to become like the Whites ourselves..."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_m5570")
+theme_override_font_sizes/font_size = 32
+text = "ESIHABITU (Asa Havey)"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_lfvs8")
+theme_override_font_sizes/font_size = 22
+text = "Pro-Peace Comanche Chief"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

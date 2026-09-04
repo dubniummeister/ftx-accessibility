@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://djofpgd3samre"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_gxcbq"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_unny4"]
+[ext_resource type="Texture2D" uid="uid://r1svbep1l6et" path="res://ui/images/spirit-guides/garrett-sg.png" id="3_gxcbq"]
+
+[node name="Satanta" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gxcbq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_unny4")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_gxcbq")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label3" type="Label" parent="." unique_id=396665216]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 408.0
+offset_right = 648.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 22
+text = "Pat Garrett tells the story of how he came to Texas and how he killed Billy the Kid."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label4" type="Label" parent="." unique_id=422614315]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 648.0
+offset_bottom = 608.0
+theme_override_font_sizes/font_size = 22
+text = "Read his story below."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="StoryRichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Welcome to the Beehive Saloon. I'm just fillin’ in here for Dutch. He's eatin’ over at Skeeter's tent. Name’s Pat Garrett and to get right to it, I guess I'm best known for shootin’ Billy the Kid. But, lots of things happened before me and Billy met in that pitch black room -- when I had about two seconds to kill Billy before he killed me first, so that's what I did.
+
+I come to Texas from Alabama after the Civil War. I done a bit of driftin’– lots of us did. Those of us who made it to this old Texas frontier were a rough lot, I guess. We lived off Mother Nature and sometimes she was a stingy mama. She made you rough. I spent lots of nights here at the old Beehive, just below Ft Griffin. Wyatt Earp and Doc Holliday spent time here too, playing cards with the cowboys and buffalo hunters, and with the soldiers from Griffin.
+
+Back then, I was a buffalo hunter. You’ve seen those old Sharps buffalo guns like I used to shoot buffs for the skinners. I come down from Dodge City and I hunted all over this country. And I could tell you some scary stories about how the Comanche chased us hunters back into Rath City or Griffin now and then – but, most folks just want to hear about Billy the Kid. Well, you’ll likely hear plenty of versions of this story but I’m the man who lived it – so let me get on to it.
+
+Well, it was like this. After the buffalo played out I drifted on out to Lincoln County, New Mexico. Had me a bar there, kinda like this old Beehive. Billy was a customer... even a friend, sorta. Nice enough fellow, He was a gun hand. the senoritas shore liked him. Little guy, but he weren't no wet mop -- he'd shoot you faster than you could say Jimmy Crack Corn. But, ‘cept for stealin’ now and then and ‘course killing all those people, he didn’t seem like a bad fellow. Some of those folks he shot probably even deserved it.
+
+Anyway, folks in New Mexico got fed up with all the fighting and they hired me as sheriff -- told me to bring in Billy, dead or alive. Well, I trailed him a good while, down to Ft. Sumner. I rode up to the house of Pete Maxwell, a friend of Billy’s, at night, thought I'd slip in to see if Billy was around. ‘Course I had my pistol, and a shotgun, you know, like the kind they carried on the Butterfield stagecoaches. It was pitch black inside that adobe house, and I heard a bed creak as somebody got up – and I eased the hammers back on that 10 gauge -- made tiny clicks - course in that dark quiet room it sounded like you'd hit a skillet on an anvil - I could just feel a gun pointed at me from across the room in the blackness. When a voice whispered \"Pete?\" I knew it was Billy...and I shot him, shot him in the dark. He never knew who killed him. I guess that was the end of the most famous outlaw in the west. Just doin’ what I was hired out to do.
+
+Funny thing, I was a hero for a while after that, even wrote a book about ‘ol Billy, but then I lost the next election for sheriff – guess folks wanted to get shut of rough guys like me, wanted to be civilized.
+
+It was - what's that word?- A transition time. When civilization took hold, it really moved fast, like Abilene town -- it was started from nothing by the railroad, same summer I killed Billy, and that was just 3 or 4 years after Col. McKenzie starved Quanah Parker and the Comanche onto reservations by shootin’ all their horses up in the Palo Duro.
+
+Yeah, the wild old days faded fast. Men like me and Wyatt and Doc and Bat Masterson, as well as the hardcase killers like Billy the Kid and John Wesley Hardin and Indians like Satanta -- we just didn't fit in with civilization. We were a holdover of wild times… bad times, I guess. This country was working on being peaceful, and it didn't want us around no more.
+
+And soon we weren't."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "PAT GARRETT"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Buffalo Hunter and Lawman"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

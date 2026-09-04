@@ -1,0 +1,219 @@
+[gd_scene format=3 uid="uid://byuv1hppnunak"]
+
+[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_2b1g2"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_ucbtg"]
+[ext_resource type="Texture2D" uid="uid://dx3ur0dwtkdfo" path="res://ui/images/spirit-guides/satanta-sg.png" id="3_2b1g2"]
+
+[node name="Satanta" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2b1g2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -640.0
+offset_right = 360.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_ucbtg")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 392.0
+offset_right = 261.89844
+offset_bottom = 672.0
+texture = ExtResource("3_2b1g2")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1829894202]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 386.0
+offset_right = 680.0
+offset_bottom = 736.0
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "MY PEOPLE"
+
+[node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "CONFLICT WITH THE WHITES"
+
+[node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "FACING THE FUTURE"
+
+[node name="Button" type="Button" parent="." unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 80.0
+offset_right = 328.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "We are warriors - from the beginning and to the end. And if the white people do not know this, then they do not know the Kiowa, or our brothers, the Comanche.
+
+How can a boy become a man, unless he fights, unless he is willing to give up his life for our people? If he shows that he will die before giving up, he is \"kluk tsingta\", a true horse, one who never gives up. All our chiefs have been warriors. They have proven themselves in battle and brought honor to our people. I am chief because I fight.
+
+They say I have killed more white people than any other Indian on the plains.
+
+I hope it is true."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Every treaty with the white man is a mistake. They will not live by their treaties, and we cannot live by them.
+
+If they say where we live, where we hunt, that is not our way. If I am a man, I must be free.
+
+If I cannot hunt buffalo... How will we eat? They bring cattle to the reservation, but the cattle is poor, hardly worth butchering.
+
+They bring meat, but it is rotten and crawling with maggots. We will not live like this.
+
+And they say, \"you must only live on this land,\" but 'this land' gets smaller and smaller because the white pests keep coming. It is not as they said it would be. Many Indian and white chiefs gathered at the Medicine Lodge. I signed a treaty there. But I know now that it was also a bad treaty.
+
+Now there is no doubt. To make a treaty with a white man is weakness. For they only take and do not give. If we want to live free, there is but one path. The warpath.
+"
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I will never make peace with the whites. Living as they want us to live is to die slowly.
+
+I have spent many days in the white man's prison. But I tell you this, a reservation is also a prison. And so, I make war on the whites.
+
+Some of my brothers have said, \"Do not do this. If I must make war, do it in secret, and keep my victories secret.\" But there is no honor in such secrets.
+
+I speak of my fights proudly. I am a warrior. A warrior's victories are a warrior's honor. My people will make new songs and bout we slaughtered the white invaders.
+
+Now I hear the armies coming for me. Once again, they will arrest me. They will take my body just as they take everything. But they will never take my heart."
+
+[node name="Label" type="Label" parent="." unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -368.0
+offset_right = 55.0
+offset_bottom = -320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "SATANTA"
+
+[node name="Label2" type="Label" parent="." unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -312.0
+offset_right = 49.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Pro-War Kiowa Chief"
+
+[node name="LeftButton" type="Button" parent="." unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="." unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

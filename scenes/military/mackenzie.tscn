@@ -1,0 +1,366 @@
+[gd_scene format=3 uid="uid://dqb7faum7udv5"]
+
+[ext_resource type="Script" uid="uid://btu8sk2heie3g" path="res://scripts/spirit-guides/spiritguide-6choiceicons.gd" id="1_6jn0q"]
+[ext_resource type="Script" uid="uid://ne6y2m8kyiqs" path="res://scripts/touchscroll.gd" id="1_okvrd"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_umvw0"]
+[ext_resource type="Texture2D" uid="uid://lr8bbf3noflo" path="res://ui/images/spirit-guides/mackenzie-sg.png" id="3_jjwx8"]
+[ext_resource type="Texture2D" uid="uid://be4r4v3mt47yq" path="res://ui/images/military_on_frontier/hand.png" id="4_6jn0q"]
+[ext_resource type="Texture2D" uid="uid://dri20yoabmxli" path="res://ui/images/military_on_frontier/texas.png" id="5_ls5od"]
+
+[node name="Mackenzie" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jn0q")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1447944778]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 1280.0
+script = ExtResource("1_okvrd")
+
+[node name="Control" type="Control" parent="ScrollContainer" unique_id=1391437464]
+custom_minimum_size = Vector2(720, 1488)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -672.0
+offset_right = 360.0
+offset_bottom = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=1731127905 instance=ExtResource("2_umvw0")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control" unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 424.0
+offset_right = 261.89844
+offset_bottom = 704.0
+texture = ExtResource("3_jjwx8")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Control" unique_id=398690569]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 376.0
+offset_right = 704.0
+offset_bottom = 752.0
+theme_override_constants/separation = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=1829894202]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT BROUGHT YOU TO TEXAS?"
+autowrap_mode = 2
+
+[node name="OptionButton2" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+text = "HOW DID WARFARE TACTICS CHANGE FROM THE CIVIL WAR TO FIGHTING INDIANS?"
+autowrap_mode = 2
+
+[node name="OptionButton3" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT DO YOU EXPECT FROM THE MEN UNDER YOUR COMMAND?"
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=2137600233]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton4" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=739832154]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "DID YOU VIOLATE A TREATY WITH MEXICO IN 1873?"
+autowrap_mode = 2
+
+[node name="OptionButton5" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=1708884724]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+text = "HOW SIGNIFICANT WAS THE BATTLE OF PALO DURO CANYON IN 1874?"
+autowrap_mode = 2
+
+[node name="OptionButton6" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=496742721]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT ACHIEVEMENT ARE YOU MOST PROUD OF IN YOUR CAREER?"
+autowrap_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/Control" unique_id=1208265148]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = 16.0
+offset_right = 132.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HandButton" type="TextureButton" parent="ScrollContainer/Control/HBoxContainer2" unique_id=1842419173]
+custom_maximum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("4_6jn0q")
+stretch_mode = 5
+
+[node name="TexasButton" type="TextureButton" parent="ScrollContainer/Control/HBoxContainer2" unique_id=1667265316]
+custom_maximum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("5_ls5od")
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="ScrollContainer/Control" unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Control" unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 160.0
+offset_right = 328.0
+offset_bottom = 712.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "After having served in the Civil War and reaching a rank of brigadier general my rank was reduced to captain, as was the custom after the war had ended. In the spring of 1867 friends told me the colonelcy of the 41st Infantry was available. Because it was a black regiment several other officers had already turned down the command. I decided to apply because this assignment would jump me 3 grades in rank. I was accepted and at 26 years old, I was the 2nd youngest colonel in the army. We were assigned to Fort Brown, Texas, near the Mexican border.
+
+I knew that if I could overhaul a bunch of stubborn volunteers during a war, I could certainly do the same with former slaves during peacetime. Under my command the 41st became a superior regiment boasting the lowest desertion rates in the army. In 1870 I was given command of the Fourth Cavalry."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Many former Union officers on the frontier never made the mental adjustment from the Civil War to the Indian service and attempted to counter the Indians’ hit-and-run tactics with the same procedures they had used against Confederates. This failure to adapt ultimately led to general Custer’s disaster at the Little Bighorn.
+
+The 1871 campaigns taught me to “think Indian” which meant to attack without warning or offering a chance for surrender, and to kill whoever happened to get in the way.
+
+I would turn their own methods against them and hit them where they were the most vulnerable, their families and their possessions. This is exactly what the Indians had been doing to the whites."
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I am very high in my expectations, and short on praise. A soldier renders meritorious service because that is what the government pays him to do. It is no more than I expect of myself. If a commendation is in order it is included in official reports. My attention is directed toward defeating the enemy rather than embellishing the results, and definitely not for approval from my soldiers."
+
+[node name="Option4RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=115317647]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "In May of 1873 I was sent with my 4th Cavalry to the Mexican borderlands to stop the cross-border raiding on Texas settlements by Kickapoos and Apaches living in Mexico.
+
+Acting on unofficial orders from general Sheridan, the 4th Cavalry, under my command, crossed 80 miles into Mexico and destroyed three Kickapoo Apache settlements. Our actions were necessary and not directed against Mexico but only against the Indians, who did not respect either laws nor borders."
+
+[node name="Option5RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=435668523]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "The loss of the Indians’ Palo Duro Canyon camp meant the loss of their safe haven and all of their winter supplies, which we destroyed. We captured more than 1400 Indian ponies, which we later slaughtered to prevent them from returning to the Indians.
+
+Casualties were light in the engagement, but without sufficient mounts or supplies the tribes could not hold out over winter so they returned to the reservation at Fort Sill. This battle represented the southern Plains Indians’ last effort at military resistance against the whites."
+
+[node name="Option6RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=19970598]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "In 1879 up in Colorado I was tasked with moving the Ute Indians, to close a reservation, and to do it without force and without official approval. With my troops ready to enforce my edicts, I met with a delegation of the Indians, who were carrying arms and in a foul mood, denouncing the whites for taking Indian land. With calm but firm determination I told them, it is not necessary for me to stay here any longer, and they could settle the matter by discussion among themselves. All I wanted to know was whether they would go or not. I told them to send for me when they had arrived at a conclusion. Through determination, backed by military strength, the crisis was settled peacefully, despite a situation where one wrong move could have triggered a major battle."
+
+[node name="HandRichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=957451602]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "In the Civil War, during the siege of Petersburg, a shell fragment tore off the first 2 fingers of my right hand. When I’d get irritated, I’d snap the stumps against one another. The Indians call me Bad Hand and the troops, behind my back, call me Three Finger Jack."
+
+[node name="TexasRichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=2006305211]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -268.0
+offset_right = 320.0
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I first came through this land, where you stand today, in the spring of 1871 when I moved the 4th cavalry from Fort Concho to Fort Richardson along the trail established by Captain Marcy. We camped at old Fort Chadbourne and again at the ruins of old Fort Phantom Hill where the only thing that remained were the chimneys, standing alone in quiet desolation, commemorative of time’s decay."
+
+[node name="Label" type="Label" parent="ScrollContainer/Control" unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -472.0
+offset_right = 55.0
+offset_bottom = -424.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "RANALD MACKENZIE"
+
+[node name="Label2" type="Label" parent="ScrollContainer/Control" unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -416.0
+offset_right = 48.0
+offset_bottom = -384.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Insert Flavor Text Here"
+
+[node name="LeftButton" type="Button" parent="ScrollContainer/Control" unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="ScrollContainer/Control" unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton4" to="." method="_on_option_button_4_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton5" to="." method="_on_option_button_5_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton6" to="." method="_on_option_button_6_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer2/HandButton" to="." method="_on_hand_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer2/TexasButton" to="." method="_on_texas_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/ExitButton" to="." method="_on_exit_button_pressed"]

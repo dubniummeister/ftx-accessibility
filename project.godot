@@ -26,6 +26,11 @@ window/stretch/aspect="expand"
 
 pointing/emulate_touch_from_mouse=true
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/es.mo", "res://localization/en.mo")
+locale/translations_pot_files=PackedStringArray("res://scenes/main/main_menu.tscn", "res://scenes/main/language_select.tscn", "res://scenes/comanche/asa_havey.tscn", "res://scenes/comanche/satanta.tscn", "res://scenes/buffalo/mooar.tscn", "res://scenes/buffalo/parker.tscn", "res://scenes/military/mackenzie.tscn", "res://scenes/military/marcy.tscn", "res://scenes/cowboys/goodnight.tscn", "res://scenes/cowboys/reynolds.tscn", "res://scenes/settlements/britt.tscn", "res://scenes/settlements/clifton.tscn", "res://scenes/settlements/garrett.tscn")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

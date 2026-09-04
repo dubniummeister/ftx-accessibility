@@ -1,0 +1,1116 @@
+# LANGUAGE translation for ftx accessibility for the following files:
+# res://scenes/main/main_menu.tscn
+# res://scenes/main/language_select.tscn
+# res://scenes/comanche/asa_havey.tscn
+# res://scenes/comanche/satanta.tscn
+# res://scenes/buffalo/mooar.tscn
+# res://scenes/buffalo/parker.tscn
+# res://scenes/military/mackenzie.tscn
+# res://scenes/military/marcy.tscn
+# res://scenes/cowboys/goodnight.tscn
+# res://scenes/cowboys/reynolds.tscn
+# res://scenes/settlements/britt.tscn
+# res://scenes/settlements/clifton.tscn
+# res://scenes/settlements/garrett.tscn
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ftx accessibility\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: scenes/main/main_menu.tscn
+msgid ""
+"Welcome to Frontier Texas!\n"
+"Please Select a Spirit Guide Below"
+msgstr ""
+"¡Bienvenido a Frontier Texas!\n"
+"Por favor, selecciona una Guía Espiritual a continuación"
+
+#: scenes/main/main_menu.tscn
+msgid "What is a Spirit Guide?"
+msgstr "¿Qué es un Guía Espiritual?"
+
+#: scenes/main/main_menu.tscn
+msgid "Comanche Empire"
+msgstr "Guías Espirituales"
+
+#: scenes/main/main_menu.tscn
+msgid ""
+"Esihabiitu\n"
+"(Asa Havey)"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Satanta"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Buffalo Hide Trade"
+msgstr "Comercio de Pieles de Búfalo"
+
+#: scenes/main/main_menu.tscn
+msgid "Cynthia Ann Parker"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "J. Wright Mooar"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Military on the Frontier"
+msgstr "Militares en la Frontera"
+
+#: scenes/main/main_menu.tscn
+msgid "Randolph Marcy"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Ranald Mackenzie"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Cowboys and Longhorns"
+msgstr "Vaqueros y Longhorns"
+
+#: scenes/main/main_menu.tscn
+msgid "George Reynolds"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Charles Goodnight"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Frontier Settlements"
+msgstr "Asentamientos Fronterizos"
+
+#: scenes/main/main_menu.tscn
+msgid "Britt Johnson"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Pat Garrett"
+msgstr ""
+
+#: scenes/main/main_menu.tscn
+msgid "Elizabeth Carter Clifton"
+msgstr ""
+
+#: scenes/main/language_select.tscn
+msgid "Select a Language Here"
+msgstr "Selecciona un idioma aquí"
+
+#: scenes/main/language_select.tscn
+msgid "ASL Mode"
+msgstr ""
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+msgid "MY PEOPLE"
+msgstr "MI PUEBLO"
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+msgid "CONFLICT WITH THE WHITES"
+msgstr "CONFLICTO CON LOS BLANCOS"
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+msgid "FACING THE FUTURE"
+msgstr "MIRANDO AL FUTURO"
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+#: scenes/military/mackenzie.tscn scenes/military/marcy.tscn
+#: scenes/cowboys/goodnight.tscn scenes/cowboys/reynolds.tscn
+#: scenes/settlements/britt.tscn scenes/settlements/clifton.tscn
+#: scenes/settlements/garrett.tscn
+msgid "WHO AM I?"
+msgstr ""
+
+#: scenes/comanche/asa_havey.tscn
+msgid ""
+"\"Haa Haits\"! Hello, friend. Since long, long ago, Indians have come to the "
+"banks of the Concho River - which we call \"ebi hunubi\", Blue river - to "
+"camp, because it gives us water, wood, and a long rock cliff to protect us "
+"from the wind. While they were camped here, the Indians used their paints to "
+"tell their stories on the cliffs of Paint Rock. In this place are stories, "
+"some from tribes and languages long forgotten, pictures of the old ways, "
+"hunting the buffalo in the time before the horse, stalking him on foot with "
+"bow and arrow... Talking to the sun, Our Father, and asking for \"puha\", "
+"the medicine power that makes us strong.\n"
+"\n"
+"The paintings here and at other places on the Plains were drawn to remind us "
+"of our stories. We made no written words. Our stories are passed from "
+"generation by word of mouth. From old to young we tell these stories in the "
+"long nights of winter at places like this one, places that breathe with the "
+"history of our people."
+msgstr ""
+"¡“Haa haits”! Hola, amigo. Desde hace mucho tiempo, mucho tiempo, los Indios "
+"han venido a las orillas del Río Concho—el cual le llamamos “ebi hunubi” o "
+"Río Azul—para acampar, porque nos da agua, madera, y un precipicio largo de "
+"piedra para protegernos del viento. Mientras ellos acamparon aquí, los "
+"indios usaron pintura en los precipicios de piedra para contar sus "
+"historias. En este lugar hay historias, algunas de tribus e idiomas que se "
+"han olvidado por mucho tiempo, pinturas de viejas costumbres, la casería del "
+"búfalo antes de que surgiera el caballo, lo acechaban a pie con arco y "
+"fleche… hablando con el sol, con Nuestro Padre, y pedir por puha, la "
+"medicina ponderosa que nosh ace fuertes.\n"
+"\n"
+"Las pinturas aquí y en otros lugares en las Llanuras fueron dibujadas para "
+"recordarnos de nuestras historias. No hicimos escrituras. Nuestras historias "
+"fueron pasadas de generación a generación de boca en boca. Del Viejo al "
+"joven fueron contadas estas historias en las largas noches del invierno en "
+"lugares como este, lugares que respiran la historia de nuestros ancestros."
+
+#: scenes/comanche/asa_havey.tscn
+msgid ""
+"[Wolf howling] Haa, tell me some good news, brother!\n"
+"The Taibos, or Whites, know my tribe as the Comanches, but since the "
+"beginning of time, we called ourselves the Numunuu, which means ‘all of us,’ "
+"or Our People.  We were always hunters and warriors, and once we became "
+"masters of horses we grew in numbers and strength, and we took the Plains of "
+"Texas as our own.\n"
+"\n"
+"Our People fought bravely to keep the Spanish soldiers and priests from "
+"marking the Plains with their footprints.  The Numunuu also blocked the "
+"Mexicans and the French, the Texans too – for almost 100 winters we kept "
+"them from claiming our lands.  Nobody crossed West Texas unless we willed "
+"it.\n"
+"\n"
+"I do not know yet the end of this story between the Numunuu and the Whites, "
+"but even if the day comes when we no longer live free, we should be "
+"remembered with respect for our way of living.\n"
+msgstr ""
+"[Aullido de lobo] ¡Haa, dime las buenas nuevas, hermano!\n"
+"Los Taibos, o Blancos, conocen a mi tribu como los Comanches, pero desde el "
+"principio, nos llamamos los Numunuu, que quiere decir ‘todos nosotros,’ o "
+"Nuestra Gente. Siempre fuimos cazadores y guerros, y una vez que llegamos a "
+"ser los amos de los caballos crecimos en números y fuerza, y tomamos las "
+"Llanuras de Texas como nuestras.\n"
+"\n"
+"Nuestra gente lucho valientemente para evitar que los soldados Españoles y "
+"los sacerdotes marcaran las Llanuras con sus huellas. Los Numunuu también—"
+"por casi 100 inviernos los mantuvimos al margen de reclamar nuestras "
+"tierras. Nadie cruzaba el Oeste de Texas al menos que se lo permitiéramos.\n"
+"\n"
+"Aun no se el final de esta historia entre los Numunuu y los Blancos, pero "
+"incluso si el día viene cuando ya no vivimos en libertad, debemos ser "
+"recordados con respeto por nuestra forma de vida.\n"
+
+#: scenes/comanche/asa_havey.tscn
+msgid ""
+"In my time, even as Our People are put on reservations or retreat to the "
+"canyons of the High Plains, the paintings on the rocks - and the stories "
+"they tell - are still being made.\n"
+"\n"
+"We paint newer pictures among the ancient ones, showing how our paths cross "
+"with the paths of the Whites.\n"
+"\n"
+"Back in my grandfather's time, the Comanche rode with the Wichitas to burn "
+"the spirit house of the taibos at San Saba River, what we call tsuku kahni "
+"hunubi, or \"old house river.\" The ruins still stand. But the taibos have a "
+"bigger spirit house south of here at a place they call San Antonio.\n"
+"\n"
+"Those taibos believe in a bad spirit who looks like a white man with horns "
+"and a tail, who tells them to do bad things. Sometimes I think the taibos "
+"listen too much to their bad spirit.\n"
+"\n"
+"Yes, we have fought to keep our land and way of life. But I see that our old "
+"ways of raiding and taking captives must change. Now I try to stop these "
+"things among My People. I cannot decide this by myself. We must have a "
+"council with a great many speeches and everyone must all agree. Everyone. "
+"Now I argue for peace with the Whites, but I do not wish us to become like "
+"the Whites ourselves..."
+msgstr ""
+"En mi tiempo, aun como Nuestras Personas fueron puestas a reservaciones o "
+"retiradas en los cañones de las Llanuras Altas, las pinturas sobre las "
+"piedras—y las historias contadasaun siguen existiendo.\n"
+"\n"
+"Pintamos pinturas más nuevas entre las antiguas, mostrando como nuestros "
+"senderos se cruzaban con los senderos de los Blancos.\n"
+"Atrás en el tiempo de mi abuelo, los Comanches cabalgaban con los Wichitas "
+"para quemar la casa de el espíritu de los taibos en el Río San Saba, al que "
+"llamamos tsuku kahni hunubi (pron. Tsookoo connee hoonoov), “el río casa "
+"vieja,” porque las ruinas aun están ahí. Pero los taibos tienen otra casa "
+"grande de espíritu al sur de este lugar al cual ellos llaman San Antonio.\n"
+"\n"
+"Esos taibos creen en un espíritu malo que se parece a un hombre blanco con "
+"cuernos y con cola, que les dice cosas malas. A veces pienso que quizá todos "
+"los taibos escuchan desmasiado a su espíritu malo.\n"
+"\n"
+"Si, hemos luchador para mantener nuestra tierra y estilo de vida. Pero veo "
+"que nuestras Viejas costumbres de invader y tomar a prisioneros deben "
+"cambiar. Ahora trato de parar estas cosas entre Nuestra Gente, y les digo "
+"que hay que regresar a los prisioneros. No puedo decider estop or yo mismo. "
+"Deberíamos tener una junta con varios discursos y donde todos nos pongamos "
+"de acuerdo. Todos, Ahora discuto por la paz con los Blancos, pero no deseo "
+"llegar a ser uno de los Blancos…"
+
+#: scenes/comanche/asa_havey.tscn
+msgid "ESIHABITU (Asa Havey)"
+msgstr ""
+
+#: scenes/comanche/asa_havey.tscn
+msgid "Pro-Peace Comanche Chief"
+msgstr "Jefe Comanche Pro-Paz"
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+#: scenes/military/mackenzie.tscn scenes/military/marcy.tscn
+#: scenes/cowboys/goodnight.tscn scenes/cowboys/reynolds.tscn
+#: scenes/settlements/britt.tscn scenes/settlements/clifton.tscn
+#: scenes/settlements/garrett.tscn
+msgid "<"
+msgstr ""
+
+#: scenes/comanche/asa_havey.tscn scenes/comanche/satanta.tscn
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+#: scenes/military/mackenzie.tscn scenes/military/marcy.tscn
+#: scenes/cowboys/goodnight.tscn scenes/cowboys/reynolds.tscn
+#: scenes/settlements/britt.tscn scenes/settlements/clifton.tscn
+#: scenes/settlements/garrett.tscn
+msgid "X"
+msgstr ""
+
+#: scenes/comanche/satanta.tscn
+msgid ""
+"We are warriors - from the beginning and to the end. And if the white people "
+"do not know this, then they do not know the Kiowa, or our brothers, the "
+"Comanche.\n"
+"\n"
+"How can a boy become a man, unless he fights, unless he is willing to give "
+"up his life for our people? If he shows that he will die before giving up, "
+"he is \"kluk tsingta\", a true horse, one who never gives up. All our chiefs "
+"have been warriors. They have proven themselves in battle and brought honor "
+"to our people. I am chief because I fight.\n"
+"\n"
+"They say I have killed more white people than any other Indian on the "
+"plains.\n"
+"\n"
+"I hope it is true."
+msgstr ""
+
+#: scenes/comanche/satanta.tscn
+msgid ""
+"Every treaty with the white man is a mistake. They will not live by their "
+"treaties, and we cannot live by them.\n"
+"\n"
+"If they say where we live, where we hunt, that is not our way. If I am a "
+"man, I must be free.\n"
+"\n"
+"If I cannot hunt buffalo... How will we eat? They bring cattle to the "
+"reservation, but the cattle is poor, hardly worth butchering.\n"
+"\n"
+"They bring meat, but it is rotten and crawling with maggots. We will not "
+"live like this.\n"
+"\n"
+"And they say, \"you must only live on this land,\" but 'this land' gets "
+"smaller and smaller because the white pests keep coming. It is not as they "
+"said it would be. Many Indian and white chiefs gathered at the Medicine "
+"Lodge. I signed a treaty there. But I know now that it was also a bad "
+"treaty.\n"
+"\n"
+"Now there is no doubt. To make a treaty with a white man is weakness. For "
+"they only take and do not give. If we want to live free, there is but one "
+"path. The warpath.\n"
+msgstr ""
+
+#: scenes/comanche/satanta.tscn
+msgid ""
+"I will never make peace with the whites. Living as they want us to live is "
+"to die slowly.\n"
+"\n"
+"I have spent many days in the white man's prison. But I tell you this, a "
+"reservation is also a prison. And so, I make war on the whites.\n"
+"\n"
+"Some of my brothers have said, \"Do not do this. If I must make war, do it "
+"in secret, and keep my victories secret.\" But there is no honor in such "
+"secrets.\n"
+"\n"
+"I speak of my fights proudly. I am a warrior. A warrior's victories are a "
+"warrior's honor. My people will make new songs and bout we slaughtered the "
+"white invaders.\n"
+"\n"
+"Now I hear the armies coming for me. Once again, they will arrest me. They "
+"will take my body just as they take everything. But they will never take my "
+"heart."
+msgstr ""
+
+#: scenes/comanche/satanta.tscn
+msgid "SATANTA"
+msgstr ""
+
+#: scenes/comanche/satanta.tscn
+msgid "Pro-War Kiowa Chief"
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+msgid "VALUE OF THE BUFFALO"
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+msgid "BUFFALO AS A WAY OF LIFE"
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn scenes/buffalo/parker.tscn
+msgid "LIFE AFTER THE BUFFALO IS GONE"
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn
+msgid ""
+"I was just a big kid off the farm when I moved to Kansas in 1870 from back "
+"East. Keeping the railroad crews in meat by killing a few buffalo was a way "
+"I could make a living, so that’s what I did. We sold a few hides for lap "
+"robes, but there wasn’t much demand. One day, I had an idea that would "
+"change all that. I sent a few hides to my brother back in New York to see if "
+"the commercial tanneries would buy them to make leather.\n"
+"\n"
+"I thought I walked into a gold mine. He got an order for 2,000 hides! He "
+"quit his job, came to Kansas, and we started killing buffalo. So did "
+"everybody else, when they figured what we were doing.\n"
+"\n"
+"Good hunting outfits could make a lot of money. Within a year, there were "
+"hundreds of those outfits all across the Plains. We killed them shaggies by "
+"the tens of thousands… even millions, I guess."
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn
+msgid ""
+"Back then, we didn’t think the great buffalo herds could be wiped out. Once, "
+"I saw a herd north of here that was seven or eight miles wide - maybe a "
+"hundred miles long. There were millions of them!\n"
+"\n"
+"But with 3,000 buffalo hunters in Kansas, it didn’t take long before it "
+"seemed like there were more hunters than buffalo. I wanted to move south to "
+"Texas. We’d heard that the Medicine Lodge Treaty reserving the Texas herd "
+"for the Indians, so we went to the commanding officer of Fort Dodge, and "
+"asked what would happen to a buffalo hunter if he crossed the Canadian River "
+"into Texas to hunt. “Boys,” the Colonel told us “If I was a buffalo hunter "
+"I’d go where the buffalo are.”\n"
+"\n"
+"The government didn’t outright say it, but its intention was to let us kill "
+"the buffalo to cripple the Indians’ independence. Without buffalo, the "
+"Indians would have to live on reservations and take government handouts just "
+"to keep from starving.\n"
+"\n"
+"It was money to us – it was our livings -- so with Charlie Rath and others "
+"providing supplies, myself, Bat Masterson and Billy Dixon leading the way, "
+"we headed for Texas."
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn
+msgid ""
+"Well now, them bunches of shaggies are smaller and smaller --- and further "
+"apart. I can hunt for days without seeing any buffalo. I can’t afford to "
+"keep paying these skinners, if there’s nothing to skin. But buffalo was "
+"brought me and old Pete Snyder to this fine piece of Texas. Pete’s done well "
+"as a merchant, even has a town named after him. I figure building a cattle "
+"ranch would make a good life’s work for me. Without the buffalo, this grass "
+"could provide for a lot of cattle, so I think I’m going to give that a go. I "
+"reckon it’s a good thing I hung onto the money I made."
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn
+msgid "J. WRIGHT MOOAR"
+msgstr ""
+
+#: scenes/buffalo/mooar.tscn
+msgid "Buffalo Hunter"
+msgstr ""
+
+#: scenes/buffalo/parker.tscn
+msgid ""
+"“Haa haits.” Though I was born in the world of the Whites, I am Comanche. My "
+"life with the Numunuu is everything, and the mainstay of our lives will "
+"always be the buffalo. We know this. We eat its meat fresh and also dried. "
+"The skins we use for robes and saddles and shelter. We make shields stronger "
+"than the white man’s bullets. We sew as many as 15 buffalo skins together to "
+"make our tipis. The fur is woven into ropes or made into pillows. Even the "
+"buffalo’s teeth become a rattle for my baby, Quanah."
+msgstr ""
+
+#: scenes/buffalo/parker.tscn
+msgid ""
+"Some of the things we got from the Whites were good. Arrowheads made from "
+"iron were stronger than stone. Cloth was warm and light and protected us in "
+"the winter. Comancheros came from Santa Fe to sell us these goods, and we "
+"traded them captives and buffalo robes. But nothing that the White man did "
+"with the buffalo was good.\n"
+"\n"
+"Though we believed that the buffalo of Texas would be only for the Indians, "
+"White hunters still came onto the plains. They killed only for the hides, "
+"racing to kill the buffalo before other hunters could kill and skin them. We "
+"know that unless the hunters are stopped, the buffalo will soon be gone.\n"
+msgstr ""
+
+#: scenes/buffalo/parker.tscn
+msgid ""
+"For the Numunuu, winter used to be a good time. Buffalo were in their prime "
+"in the late Fall, and we stocked up for winter when their coats were thick "
+"and their meat was fat.\n"
+"\n"
+"With each season it grows harder to find the buffalo. Now, the winter is "
+"called, “the time our babies cry for food.” And without the buffalo, my "
+"people do not know any way to live. We can only starve, or go to the "
+"reservations."
+msgstr ""
+
+#: scenes/buffalo/parker.tscn
+msgid "CYNTHIA ANN PARKER"
+msgstr ""
+
+#: scenes/buffalo/parker.tscn
+msgid "Captive turned Comanche"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn scenes/military/marcy.tscn
+msgid "WHAT BROUGHT YOU TO TEXAS?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "HOW DID WARFARE TACTICS CHANGE FROM THE CIVIL WAR TO FIGHTING INDIANS?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "WHAT DO YOU EXPECT FROM THE MEN UNDER YOUR COMMAND?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "DID YOU VIOLATE A TREATY WITH MEXICO IN 1873?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "HOW SIGNIFICANT WAS THE BATTLE OF PALO DURO CANYON IN 1874?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "WHAT ACHIEVEMENT ARE YOU MOST PROUD OF IN YOUR CAREER?"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"After having served in the Civil War and reaching a rank of brigadier "
+"general my rank was reduced to captain, as was the custom after the war had "
+"ended. In the spring of 1867 friends told me the colonelcy of the 41st "
+"Infantry was available. Because it was a black regiment several other "
+"officers had already turned down the command. I decided to apply because "
+"this assignment would jump me 3 grades in rank. I was accepted and at 26 "
+"years old, I was the 2nd youngest colonel in the army. We were assigned to "
+"Fort Brown, Texas, near the Mexican border.\n"
+"\n"
+"I knew that if I could overhaul a bunch of stubborn volunteers during a war, "
+"I could certainly do the same with former slaves during peacetime. Under my "
+"command the 41st became a superior regiment boasting the lowest desertion "
+"rates in the army. In 1870 I was given command of the Fourth Cavalry."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"Many former Union officers on the frontier never made the mental adjustment "
+"from the Civil War to the Indian service and attempted to counter the "
+"Indians’ hit-and-run tactics with the same procedures they had used against "
+"Confederates. This failure to adapt ultimately led to general Custer’s "
+"disaster at the Little Bighorn.\n"
+"\n"
+"The 1871 campaigns taught me to “think Indian” which meant to attack without "
+"warning or offering a chance for surrender, and to kill whoever happened to "
+"get in the way.\n"
+"\n"
+"I would turn their own methods against them and hit them where they were the "
+"most vulnerable, their families and their possessions. This is exactly what "
+"the Indians had been doing to the whites."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"I am very high in my expectations, and short on praise. A soldier renders "
+"meritorious service because that is what the government pays him to do. It "
+"is no more than I expect of myself. If a commendation is in order it is "
+"included in official reports. My attention is directed toward defeating the "
+"enemy rather than embellishing the results, and definitely not for approval "
+"from my soldiers."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"In May of 1873 I was sent with my 4th Cavalry to the Mexican borderlands to "
+"stop the cross-border raiding on Texas settlements by Kickapoos and Apaches "
+"living in Mexico.\n"
+"\n"
+"Acting on unofficial orders from general Sheridan, the 4th Cavalry, under my "
+"command, crossed 80 miles into Mexico and destroyed three Kickapoo Apache "
+"settlements. Our actions were necessary and not directed against Mexico but "
+"only against the Indians, who did not respect either laws nor borders."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"The loss of the Indians’ Palo Duro Canyon camp meant the loss of their safe "
+"haven and all of their winter supplies, which we destroyed. We captured more "
+"than 1400 Indian ponies, which we later slaughtered to prevent them from "
+"returning to the Indians.\n"
+"\n"
+"Casualties were light in the engagement, but without sufficient mounts or "
+"supplies the tribes could not hold out over winter so they returned to the "
+"reservation at Fort Sill. This battle represented the southern Plains "
+"Indians’ last effort at military resistance against the whites."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"In 1879 up in Colorado I was tasked with moving the Ute Indians, to close a "
+"reservation, and to do it without force and without official approval. With "
+"my troops ready to enforce my edicts, I met with a delegation of the "
+"Indians, who were carrying arms and in a foul mood, denouncing the whites "
+"for taking Indian land. With calm but firm determination I told them, it is "
+"not necessary for me to stay here any longer, and they could settle the "
+"matter by discussion among themselves. All I wanted to know was whether they "
+"would go or not. I told them to send for me when they had arrived at a "
+"conclusion. Through determination, backed by military strength, the crisis "
+"was settled peacefully, despite a situation where one wrong move could have "
+"triggered a major battle."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"In the Civil War, during the siege of Petersburg, a shell fragment tore off "
+"the first 2 fingers of my right hand. When I’d get irritated, I’d snap the "
+"stumps against one another. The Indians call me Bad Hand and the troops, "
+"behind my back, call me Three Finger Jack."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid ""
+"I first came through this land, where you stand today, in the spring of 1871 "
+"when I moved the 4th cavalry from Fort Concho to Fort Richardson along the "
+"trail established by Captain Marcy. We camped at old Fort Chadbourne and "
+"again at the ruins of old Fort Phantom Hill where the only thing that "
+"remained were the chimneys, standing alone in quiet desolation, "
+"commemorative of time’s decay."
+msgstr ""
+
+#: scenes/military/mackenzie.tscn
+msgid "RANALD MACKENZIE"
+msgstr ""
+
+#: scenes/military/mackenzie.tscn scenes/cowboys/goodnight.tscn
+msgid "Insert Flavor Text Here"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "WHAT WAS THE ORIGINAL ROLE OF THE MILITARY ON THE FRONTIER?"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "WHAT KIND OF MEN SERVED ON THE FRONTIER?"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "WHAT DO YOU THINK OF THE INDIANS YOU ENCOUNTERED?"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "WHAT HAPPENED HERE AFTER THE CIVIL WAR?"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "HOW WERE THE INDIANS DEFEATED?"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"I was assigned to Texas in 1846 during the war with Mexico, and I fought in "
+"the battles of Palo Alto and Resaca de la Palma. Then the Army sent me to "
+"this area to search for natural roads, water and timber. On these journeys "
+"across the Texas plains, we discovered the source of the Red River and "
+"mapped the first trail for settlers moving further West. I guess I did all "
+"right, because that route is now called Marcy’s Trail, and it is the route "
+"followed by many going to the California Gold Rush in ’49, as well as the "
+"Butterfield Stage and the Goodnight-Loving Trail."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"When the military first came to the Texas frontier, our mission was simply "
+"to monitor activities by all parties – Indians, settlers and traders – "
+"without getting directly involved. In 1851 I participated in establishing a "
+"line of forts on the frontier, including Fort Phantom, just a few miles from "
+"here. It was a strange time for the military. We were under strict orders, "
+"in the beginning, to not interfere at all. More than once, our patrols "
+"passed Indian bands with white captives crying and pleading for the soldiers "
+"to rescue them. Our men did some crying to, but they still weren’t allowed "
+"to interfere. After the Civil War, that policy changed."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"Much of our success was due to the help of scouts like Jim Ned and Black "
+"Beaver, who were Delaware Indians. We also met on friendly terms with many "
+"Comanche leaders, including Buffalo Hump and Sanaco, leader of a Comanche "
+"tribe called the Penateka, or “the honey eaters.” Later Sanaco decided to "
+"fight us and eventually government soldiers killed him up on the Pease River."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"Officers were generally well-educated men. The enlisted men came from all "
+"walks of life. We had a lot of men fresh off the boats from Ireland and "
+"Germany. To them the military was a way to learn the language and start a "
+"new life in America. After the Civil War, we had black troops, called "
+"buffalo soldiers by the Indians, because of their curly hair and they were "
+"tough like the buffalo."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"After the Civil War, the army became the enforcer of national policy, and "
+"our job was to incorporate this area into the nation. Because settlers had "
+"moved well beyond our original forts, we built a new line of forts, which "
+"included Ft. Richardson, Ft. Griffin and Ft. Concho. Our mission was to "
+"enforce Indian treaties, keep things safe for settlers and encourage "
+"commerce. To do that we ended up having to fight those Indians who defied "
+"the national will."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid ""
+"A common misconception is that the government had thousands of soldiers "
+"fighting the Indians, but the truth was that we were small groups out on "
+"patrol, a long way from our posts and our supplies. To keep the troops and "
+"animals fed and the men equipped with ammunition, we established smaller "
+"outposts where the duty was both boring and dangerous. Battles with the "
+"Indians were usually short, intense and at very close range. In the long "
+"run, the Indians were defeated by a combination of tactics. To reduce their "
+"mobility, we were forced to drive away or kill their horses. That, combined "
+"with removing their food supply by slaughtering the buffalo, made it "
+"impossible for them to carry on as they always had."
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "RANDOLPH MARCY"
+msgstr ""
+
+#: scenes/military/marcy.tscn
+msgid "U.S. Army Explorer"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "HOW I GOT STARTED"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "MAKING OF A SCOUT"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "FIRST TRAIL DRIVE"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "SECOND DRIVE"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "ROCK CANYON RANCH"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "THE OLD HOME RANCH"
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"In 1856, my step brother Wes Sheek and I partnered together in a contract "
+"with Mr. Claiborne Varner to take his herd of about 430 head, mostly cows, "
+"and keep them on shares for 10 years. We could graze them wherever we "
+"wanted. And for our pay, we got every fourth calf that was dropped. Over "
+"time we drifted those cows from the Waco area northwest of the Brazos "
+"Valley, where we grazed them for a good while. At first, there was no market "
+"for calves so I began freighting while Wes remained with the herd. Hauling "
+"freight allowed me to be in the open country, where I felt most at home."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"The Civil War was hard on settlers on the frontier. The men died on the "
+"battlefields, and the women and children suffered the increasing threat of "
+"Indian raids. I quickly learned what every good scout and plainsman needs to "
+"know to survive that harsh and unforgiving land. As a result, I was called "
+"upon to serve as an Indian scout for the rangers across much of this area. "
+"In December of 1860, during the skirmish of Pease River, I discovered a blue "
+"eyed squaw that I later understood to be Cynthia Ann Parker."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"When I was about 22 years old, I met a merchant and whip-smart cowman named "
+"Mr. Oliver Loving who at the time was more than 20 years my senior. We went "
+"into business together, after the war, trailing cattle to buyers out west "
+"and mainly supplying beef to the government for the new Apache reservations. "
+"In 1866, Oliver and I combined our herds and drove about 2,000 head to Fort "
+"Sumner in New Mexico territory. We lost over 400 head crossing the Llano "
+"Estacado, the graveyard of the cowman’s hopes. Oliver took the beef that "
+"didn’t sell to Fort Sumner and pushed them on to Denver, while I went back "
+"home and round up the next herd."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"On our second drive in the late fall of 1866, Oliver and I worked out a way "
+"of crossing the Staked Plains, the Llano Estacado, without any loss of "
+"stock. On his way to Fort Sumner, to tell them that we would be delayed, "
+"Oliver was bushwhacked by Comanches. And he later died of his wounds. I "
+"promised to take care of his family and bring his body back to Texas. I kept "
+"both of those promises."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"I worked herds up and along our cattle trail for nearly a decade, extending "
+"that trail as far as Wyoming and beyond. In 1869, after I settled up with "
+"Mr. Loving’s family, I moved my headquarters from Weatherford to Pueblo, "
+"Colorado. That region offered a fine sheltered canyon along the Arkansas "
+"River. Soon after, I married Mary Ann Dyer - though most people called her "
+"Molly - a Tennessean of high breeding who was teaching school in "
+"Weatherford. We moved her in right away to that place in Pueblo and called "
+"it Rock Canyon Ranch."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"In 1872, the railroad came through southern Colorado. I made good money "
+"there but things were closing in on me. The next year, the cattle market "
+"dried up just as quick as the land did.\n"
+"\n"
+"The Texas Panhandle was being cleared of the buffalo and Comanche but the "
+"land was still fat. And better yet, it was still remote. We scouted it and "
+"found a promising place in Palo Duro Canyon. A new ranch in Texas, the first "
+"of its kind in the panhandle, would be a good venture."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"After moving my operations to the Texas Panhandle, I became partners with a "
+"well-turned Irish business man by the name of John Adair. In 1877, we "
+"created the JA Ranch and drove our first herd to market at Dodge City in "
+"1878. The next year, I built Mary a house worthy of her. Within the first "
+"five year contract, we grew that ranch to 93,000 acres and we did so well we "
+"agreed to sign a new contract for five more years. By 1885, the JA had "
+"reached a maximum of just over 1.3 million acres where we grazed more than a "
+"hundred thousand head of carefully bred cow."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid ""
+"I’ve always gotten along with animals, and the buffalo were getting wiped "
+"out while we sat by and watched. Mary was the first to act. She instructed "
+"the cowhands to bring in orphans. We started with a big bull, Old Sikes, and "
+"set him up with enough buffalo cows to keep the line going to this day. We "
+"even tried crossing them with beef cows - Cattalo we called them - but they "
+"seemed to combine the worst of both breeds, so we gave that up."
+msgstr ""
+
+#: scenes/cowboys/goodnight.tscn
+msgid "CHARLES GOODNIGHT"
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid "SURVIVING A NIGHT STAMPEDE"
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid "PIONEERING THE CATTLE DRIVE BUSINESS"
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid "FIGHTING OUTLAWS AND INDIANS"
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid ""
+"I’ll tell you what – there was nothing worse than a night stampede. We all "
+"went through it one time or another. When a big electrical storm rolled in "
+"on your herd at night, you could see the electricity glowing green on the "
+"cattle’s horns and the horse’s ears.\n"
+"\n"
+"And when the cattle get nervous, anything can set ‘em running – charging "
+"blind across the prairie so all you can do is try to ride faster – hope your "
+"horse doesn’t trip in a prairie dog hole. You’re riding hell for leather and "
+"all you can see is the sparks from your horse’s hooves striking rocks. If "
+"you’re lucky, you get in front and turn the leaders back into the herd, so "
+"that they all begin to slow down and mill.\n"
+"\n"
+"A whole night of that and you’re so tired you can hardly sit a saddle, but "
+"come first light you start ‘em heading back to the trail, just hoping all "
+"your friends are still alive and that you haven’t lost a lot of cattle."
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid ""
+"After the Civil War, with no money on the frontier but lots of cattle, I "
+"took two men from the Clear Fork country and we drove a herd 600 miles to "
+"Fort Sumner in New Mexico. Because of the Indian danger and a lack of water, "
+"we skirted around the Comancheria by following the old Butterfield Stage "
+"Road across the Texas prairie to the Pecos River and on into New Mexico. My "
+"friends Charles Goodnight and Oliver Loving later made this route famous "
+"with their drives. And in fact, I was on the cattle drive with those boys "
+"when the Indians killed Mr. Loving. My brother helped Charlie and Bose Ikard "
+"bring his body back to Weatherford to be buried.\n"
+"\n"
+"Indians, weather, stampedes…it was dangerous work. Cattle worth $3 around "
+"here were worth ten times that in New Mexico or Kansas, but trail driving "
+"was a tough job.\n"
+"\n"
+"Our goal was to get the cattle to market, collect the money and try to get "
+"home without getting robbed or killed.\n"
+"\n"
+"I was young … 25, maybe…but many of the cowboys weren’t even 18 years old. "
+"They made $40 a month for their hard work and the risks they took. That kind "
+"of money could stake you to a new life, here on the frontier."
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid ""
+"Outlaws and Indians were a danger wherever you went. Families in the region "
+"sometimes had to fort up for mutual protection. In one fight with Comanches "
+"on the Double Mountain Fork of the Brazos, I was shot in the belly with an "
+"arrow. One of my pals killed and scalped the warrior who got me.\n"
+"\n"
+"That arrow was stuck in me so hard that my brothers broke the shaft off "
+"trying to pull it out. It looked like I was going to die, but I didn’t. "
+"About 15 years later, I was in Kansas City and a surgeon cut that steel "
+"arrow point out of me. In fact, I still have the arrowhead. Sure feels "
+"better on the outside of my belly than on the inside."
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid "GEORGE REYNOLDS"
+msgstr ""
+
+#: scenes/cowboys/reynolds.tscn
+msgid "Trail Driver"
+msgstr ""
+
+#: scenes/settlements/britt.tscn
+msgid ""
+"Britt Johnson shares how he began a freighting business to support his "
+"family."
+msgstr ""
+
+#: scenes/settlements/britt.tscn scenes/settlements/garrett.tscn
+msgid "Read his story below."
+msgstr ""
+
+#: scenes/settlements/britt.tscn
+msgid ""
+"How do, folks? You snuck up kinda quiet on me, didn’t you? I guess you’re "
+"the ones been asking around Fort Belknap about me – wanted to hear the "
+"legend of Britt Johnson and how I got my family back from the Comanches, "
+"right? Well, I leave the tellin’ of that story to some of the other folks "
+"around here. I got all I can handle runnin’ my business. I suppose I can "
+"tell you about how I saw an opportunity… and took it.\n"
+"\n"
+"See when I got my family back, I had to find a way to support ‘em. The Civil "
+"War was over and lots of people were coming to the frontier to settle close "
+"to the forts, and everybody needed goods hauled. The way I saw it freighting "
+"would be the lifeblood of the frontier, so I started my own freight business "
+"between Weatherford and Forts Richardson, Belknap and Griffin. It was pretty "
+"tough in the first years. Plenty of folks were ready to make it hard for a "
+"black man.\n"
+"\n"
+"But, right now business is good. I got enough work that I need to get more "
+"wagons and I got some pretty good men out there driving for me. Even if it’s "
+"just a big old freighting wagon behind a team of mules, I’m helpin’ to "
+"change the frontier into the kind of place where folks can make a go of it "
+"in the world.\n"
+"\n"
+"We haul plenty of stuff you’d expect… lumber, flour, just about anything "
+"folks need that they can’t grow or make themselves. Corn’s one of the main "
+"loads…for horse feed. Corn fed cavalry horses are faster than grass fed "
+"Indian ponies.\n"
+"\n"
+"[Dog barks] Okay, Red I’m coming. That’s my dog, Red, I call him that "
+"because I got him up on the Red River.\n"
+"\n"
+"A man has to make a stand for the things he believes in. Me, I believe in "
+"the future of this part of Texas and I’m proud to be workin’ to build it.\n"
+"\n"
+"Now you don’t mind if I get back to work, do you? They’re expecting me over "
+"at Jacksboro just three days from now. Take care."
+msgstr ""
+
+#: scenes/settlements/britt.tscn
+msgid "BRITT JOHNSON"
+msgstr ""
+
+#: scenes/settlements/britt.tscn
+msgid "Former Slave and Teamster"
+msgstr ""
+
+#: scenes/settlements/clifton.tscn
+msgid ""
+"Elizabeth Carter Clifton shares her lifetime of hardship and adversity on "
+"the frontier."
+msgstr ""
+
+#: scenes/settlements/clifton.tscn
+msgid "Read her story below."
+msgstr ""
+
+#: scenes/settlements/clifton.tscn
+msgid ""
+"Don’t think your staring’s gonna bother me. If you’re looking for a place to "
+"stay, I’m all full up. But if you’re looking for dinner, I got stew on the "
+"stove and plates for twenty.\n"
+"\n"
+"Running a boarding house looks like hard work, don’t it? I’ll tell you "
+"though, this is easy compared to my first years on the frontier. I come here "
+"from Alabama when I was 16. Me and my new husband – he weren’t white – we "
+"come to this raw old Texas frontier. We were way out by ourselves and folks "
+"got to stopping by for a meal or to spend the night. Spite I couldn’t read "
+"or write, we started the Carter Trading House. We prospered. In fact, we "
+"done real good. Started a ranch.\n"
+"\n"
+"Then one night, a man shot my husband. Murdered him. Killed my father-in-law "
+"while he was at it. Course no lawman came to try to catch the outlaw. It "
+"would have been a 100-mile ride and nobody cared enough to do that.\n"
+"\n"
+"My goodness, times was hard then. There was just a few families scattered in "
+"that wilderness between the Clear Fork and the Brazos. We mostly lived in "
+"dugouts, just holes in the ground, and sometimes picket houses with dirt "
+"floors. When the men folks away, women and children were left alone and it "
+"was up to us to protect ourselves against the Indians and outlaws. I "
+"remarried a military man, a lieutenant. He went out to check on our horses "
+"one day and just never came back. I suppose Indians or the outlaws got him. "
+"One was bad as the other. No, white outlaws was worse, cause you couldn’t "
+"tell they was bad just by looking.\n"
+"\n"
+"The Butterfield Stage started coming by my place, and I done real good off "
+"that trade. Married again, too. An Irish cowboy. He was a funny man. But a "
+"feller killed him too, right out in our pasture. You know I suppose the "
+"worst thing that happened to me was being captured by the Indians. They was "
+"Kiowas mostly led by a fellow named Sunboy, came on a big raid. They killed "
+"my daughter, Susanna, and her baby boy. Took me and my thirteen year old boy "
+"and my two granddaughters, Lottie and Milly. Drug us off through the brush. "
+"My boy, my boy was sick, couldn’t keep up, so they killed him before we "
+"barely got started. Poor Milly, she was just a little girl, she starved to "
+"death the first winter in the Indian camps. Lottie and me, we hung on. They "
+"branded Lottie – marked a circle right up on her forehead. It was a fight "
+"every day to stay alive. Wonders never cease, some troopers traded for us "
+"when the band was up in Kansas. To get home from there, I hired out to drive "
+"a mule team to Texas. Took two months to make that trip, but Lottie and me "
+"was finally back home after two horrible years.\n"
+"\n"
+"Lottie grew up, she married the sheriff at Fort Griffin. They moved up to "
+"Tascosa, up in the Panhandle, where he was sheriff. It was a rough place. "
+"Lottie died there, poor thing, just 26 years old. I never did know what "
+"killed her. Well, after that I hooked up with an old buffalo hunter, and "
+"that marriage lasted 11 years fore he died. Since then, it’s just me, pretty "
+"much living hand to mouth, helping run this boarding house in Griffin. I’m "
+"not a complainer but if I’d known what 50 years on the Texas frontier would "
+"really be like, I might’ve just stayed in Alabama!\n"
+"\n"
+"I got to get back to work now. Maybe I’ll see you about suppertime."
+msgstr ""
+
+#: scenes/settlements/clifton.tscn
+msgid "ELIZABETH CARTER CLIFTON"
+msgstr ""
+
+#: scenes/settlements/clifton.tscn
+msgid "Captive who Escaped"
+msgstr ""
+
+#: scenes/settlements/garrett.tscn
+msgid ""
+"Pat Garrett tells the story of how he came to Texas and how he killed Billy "
+"the Kid."
+msgstr ""
+
+#: scenes/settlements/garrett.tscn
+msgid ""
+"Welcome to the Beehive Saloon. I'm just fillin’ in here for Dutch. He's "
+"eatin’ over at Skeeter's tent. Name’s Pat Garrett and to get right to it, I "
+"guess I'm best known for shootin’ Billy the Kid. But, lots of things "
+"happened before me and Billy met in that pitch black room -- when I had "
+"about two seconds to kill Billy before he killed me first, so that's what I "
+"did.\n"
+"\n"
+"I come to Texas from Alabama after the Civil War. I done a bit of driftin’– "
+"lots of us did. Those of us who made it to this old Texas frontier were a "
+"rough lot, I guess. We lived off Mother Nature and sometimes she was a "
+"stingy mama. She made you rough. I spent lots of nights here at the old "
+"Beehive, just below Ft Griffin. Wyatt Earp and Doc Holliday spent time here "
+"too, playing cards with the cowboys and buffalo hunters, and with the "
+"soldiers from Griffin.\n"
+"\n"
+"Back then, I was a buffalo hunter. You’ve seen those old Sharps buffalo guns "
+"like I used to shoot buffs for the skinners. I come down from Dodge City and "
+"I hunted all over this country. And I could tell you some scary stories "
+"about how the Comanche chased us hunters back into Rath City or Griffin now "
+"and then – but, most folks just want to hear about Billy the Kid. Well, "
+"you’ll likely hear plenty of versions of this story but I’m the man who "
+"lived it – so let me get on to it.\n"
+"\n"
+"Well, it was like this. After the buffalo played out I drifted on out to "
+"Lincoln County, New Mexico. Had me a bar there, kinda like this old Beehive. "
+"Billy was a customer... even a friend, sorta. Nice enough fellow, He was a "
+"gun hand. the senoritas shore liked him. Little guy, but he weren't no wet "
+"mop -- he'd shoot you faster than you could say Jimmy Crack Corn. But, ‘cept "
+"for stealin’ now and then and ‘course killing all those people, he didn’t "
+"seem like a bad fellow. Some of those folks he shot probably even deserved "
+"it.\n"
+"\n"
+"Anyway, folks in New Mexico got fed up with all the fighting and they hired "
+"me as sheriff -- told me to bring in Billy, dead or alive. Well, I trailed "
+"him a good while, down to Ft. Sumner. I rode up to the house of Pete "
+"Maxwell, a friend of Billy’s, at night, thought I'd slip in to see if Billy "
+"was around. ‘Course I had my pistol, and a shotgun, you know, like the kind "
+"they carried on the Butterfield stagecoaches. It was pitch black inside that "
+"adobe house, and I heard a bed creak as somebody got up – and I eased the "
+"hammers back on that 10 gauge -- made tiny clicks - course in that dark "
+"quiet room it sounded like you'd hit a skillet on an anvil - I could just "
+"feel a gun pointed at me from across the room in the blackness. When a voice "
+"whispered \"Pete?\" I knew it was Billy...and I shot him, shot him in the "
+"dark. He never knew who killed him. I guess that was the end of the most "
+"famous outlaw in the west. Just doin’ what I was hired out to do.\n"
+"\n"
+"Funny thing, I was a hero for a while after that, even wrote a book about "
+"‘ol Billy, but then I lost the next election for sheriff – guess folks "
+"wanted to get shut of rough guys like me, wanted to be civilized.\n"
+"\n"
+"It was - what's that word?- A transition time. When civilization took hold, "
+"it really moved fast, like Abilene town -- it was started from nothing by "
+"the railroad, same summer I killed Billy, and that was just 3 or 4 years "
+"after Col. McKenzie starved Quanah Parker and the Comanche onto reservations "
+"by shootin’ all their horses up in the Palo Duro.\n"
+"\n"
+"Yeah, the wild old days faded fast. Men like me and Wyatt and Doc and Bat "
+"Masterson, as well as the hardcase killers like Billy the Kid and John "
+"Wesley Hardin and Indians like Satanta -- we just didn't fit in with "
+"civilization. We were a holdover of wild times… bad times, I guess. This "
+"country was working on being peaceful, and it didn't want us around no "
+"more.\n"
+"\n"
+"And soon we weren't."
+msgstr ""
+
+#: scenes/settlements/garrett.tscn
+msgid "PAT GARRETT"
+msgstr ""
+
+#: scenes/settlements/garrett.tscn
+msgid "Buffalo Hunter and Lawman"
+msgstr ""
+
+msgid "ftx accessibility"
+msgstr ""

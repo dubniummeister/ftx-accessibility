@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ne6y2m8kyiqs" path="res://scripts/touchscroll.gd" id="1_001j1"]
 [ext_resource type="Texture2D" uid="uid://c2axnn2qmtluj" path="res://ui/images/spirit-guides/asa_havey-sg.png" id="1_5vafy"]
+[ext_resource type="Script" uid="uid://bvymp5quuy48u" path="res://scripts/main_menu.gd" id="1_rf05u"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="1_ygj4d"]
 [ext_resource type="Texture2D" uid="uid://dx3ur0dwtkdfo" path="res://ui/images/spirit-guides/satanta-sg.png" id="2_byqcc"]
+[ext_resource type="Script" uid="uid://dci7b4h1ucarr" path="res://scenes/main/screen.gd" id="3_7orsx"]
 [ext_resource type="Texture2D" uid="uid://c65f6s125e7m6" path="res://ui/images/spirit-guides/parker-sg.png" id="3_s2sug"]
 [ext_resource type="Texture2D" uid="uid://dgslqyg1knu1t" path="res://ui/images/spirit-guides/mooar-sg.png" id="4_ygj4d"]
 [ext_resource type="Texture2D" uid="uid://bfm5pjfqm07a6" path="res://ui/images/spirit-guides/marcy-sg.png" id="5_001j1"]
@@ -28,6 +30,7 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
+script = ExtResource("1_rf05u")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=2078085732]
 layout_mode = 1
@@ -45,10 +48,14 @@ grow_vertical = 2
 tile_scroll_hint = true
 script = ExtResource("1_001j1")
 
-[node name="Control" type="Control" parent="ScrollContainer" unique_id=1424001601]
+[node name="Control" type="Control" parent="ScrollContainer" unique_id=1424001601 node_paths=PackedStringArray("language_select", "collapse_control", "nodes_to_shift")]
 custom_minimum_size = Vector2(720, 1408)
 layout_mode = 2
 mouse_filter = 1
+script = ExtResource("3_7orsx")
+language_select = NodePath("LanguageSelect")
+collapse_control = NodePath("LanguageSelect/ColorRect/CollapseControl")
+nodes_to_shift = [NodePath("ColorRect"), NodePath("ColorRect2"), NodePath("SpiritGuidesLabel1"), NodePath("SpiritGuidesLabel2"), NodePath("SpiritGuidesLabel3"), NodePath("SpiritGuidesLabel4"), NodePath("SpiritGuidesLabel5")]
 
 [node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=378191788]
 layout_mode = 1
@@ -60,7 +67,7 @@ anchor_bottom = 0.5
 offset_left = -360.0
 offset_top = -704.0
 offset_right = 360.0
-offset_bottom = 704.0
+offset_bottom = 1152.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -74,9 +81,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -336.0
-offset_top = -424.0
+offset_top = -336.0
 offset_right = 336.0
-offset_bottom = -288.0
+offset_bottom = -200.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -123,9 +130,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -264.0
-offset_top = -256.0
+offset_top = -168.0
 offset_right = -87.0
-offset_bottom = -228.0
+offset_bottom = -140.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -198,9 +205,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 88.0
-offset_top = -256.0
+offset_top = -168.0
 offset_right = 269.0
-offset_bottom = -228.0
+offset_bottom = -140.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -272,9 +279,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -288.0
-offset_top = 88.0
+offset_top = 176.0
 offset_right = -63.0
-offset_bottom = 116.0
+offset_bottom = 204.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -346,9 +353,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 56.0
-offset_top = 88.0
+offset_top = 176.0
 offset_right = 293.0
-offset_bottom = 116.0
+offset_bottom = 204.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -370,11 +377,11 @@ grow_vertical = 2
 scale = Vector2(0.2, 0.2)
 theme_override_constants/separation = 100
 
-[node name="MarcyButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=793692262]
+[node name="ReynoldsButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=793692262]
 layout_mode = 2
 texture_normal = ExtResource("7_7orsx")
 
-[node name="MarcyLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/MarcyButton" unique_id=951924666]
+[node name="ReynoldsLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/ReynoldsButton" unique_id=951924666]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -391,11 +398,11 @@ theme_override_font_sizes/font_size = 85
 text = "George Reynolds"
 horizontal_alignment = 1
 
-[node name="MackenzieButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=2144687981]
+[node name="GoodnightButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2" unique_id=2144687981]
 layout_mode = 2
 texture_normal = ExtResource("8_pkvy1")
 
-[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/MackenzieButton" unique_id=964465621]
+[node name="GoodnightLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/GoodnightButton" unique_id=964465621]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -420,9 +427,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -100.0
-offset_top = 392.0
+offset_top = 480.0
 offset_right = 100.0
-offset_bottom = 420.0
+offset_bottom = 508.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -444,11 +451,11 @@ grow_vertical = 2
 scale = Vector2(0.2, 0.2)
 theme_override_constants/separation = 100
 
-[node name="MarcyButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1084150983]
+[node name="BrittButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1084150983]
 layout_mode = 2
 texture_normal = ExtResource("9_1a37c")
 
-[node name="MarcyLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MarcyButton" unique_id=1756081006]
+[node name="BrittLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/BrittButton" unique_id=1756081006]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -465,11 +472,11 @@ theme_override_font_sizes/font_size = 85
 text = "Britt Johnson"
 horizontal_alignment = 1
 
-[node name="MackenzieButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=518621290]
+[node name="GarrettButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=518621290]
 layout_mode = 2
 texture_normal = ExtResource("10_u8x8k")
 
-[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MackenzieButton" unique_id=1431044734]
+[node name="GarrettLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/GarrettButton" unique_id=1431044734]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -486,11 +493,11 @@ theme_override_font_sizes/font_size = 85
 text = "Pat Garrett"
 horizontal_alignment = 1
 
-[node name="MackenzieButton2" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1672846407]
+[node name="ClftonButton" type="TextureButton" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2" unique_id=1672846407]
 layout_mode = 2
 texture_normal = ExtResource("11_eftjy")
 
-[node name="MackenzieLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/MackenzieButton2" unique_id=1329047046]
+[node name="CliftonLabel" type="Label" parent="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/ClftonButton" unique_id=1329047046]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -509,3 +516,17 @@ horizontal_alignment = 1
 
 [node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=208910980 instance=ExtResource("1_ygj4d")]
 layout_mode = 1
+
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/AsaButton" to="." method="_on_asa_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/SatantaButton" to="." method="_on_satanta_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2/ParkerButton" to="." method="_on_parker_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2/MooarButton" to="." method="_on_mooar_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2/MarcyButton" to="." method="_on_marcy_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel3/HBoxContainer2/MackenzieButton" to="." method="_on_mackenzie_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/ReynoldsButton" to="." method="_on_reynolds_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel4/HBoxContainer2/GoodnightButton" to="." method="_on_goodnight_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/BrittButton" to="." method="_on_britt_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/GarrettButton" to="." method="_on_garrett_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/ClftonButton" to="." method="_on_clfton_button_pressed"]
+
+[editable path="ScrollContainer/Control/LanguageSelect"]

@@ -1,0 +1,294 @@
+[gd_scene format=3 uid="uid://daddsvne0rdq8"]
+
+[ext_resource type="Script" uid="uid://b4l2c30qe83jo" path="res://scripts/spirit-guides/spiritguide-6choice.gd" id="1_0i4n0"]
+[ext_resource type="Script" uid="uid://ne6y2m8kyiqs" path="res://scripts/touchscroll.gd" id="1_cgpby"]
+[ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_0i4n0"]
+[ext_resource type="Texture2D" uid="uid://bfm5pjfqm07a6" path="res://ui/images/spirit-guides/marcy-sg.png" id="3_2t2b3"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="5_2t2b3"]
+
+[node name="Marcy" type="Control" unique_id=893908093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0i4n0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1447944778]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 1280.0
+script = ExtResource("1_cgpby")
+
+[node name="Control" type="Control" parent="ScrollContainer" unique_id=1391437464]
+custom_minimum_size = Vector2(720, 1344)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=760633927]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -672.0
+offset_right = 360.0
+offset_bottom = 672.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+
+[node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=1731127905 instance=ExtResource("2_0i4n0")]
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control" unique_id=394162827]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 424.0
+offset_right = 261.89844
+offset_bottom = 704.0
+texture = ExtResource("3_2t2b3")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Control" unique_id=398690569]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 376.0
+offset_right = 704.0
+offset_bottom = 752.0
+theme_override_constants/separation = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=1829894202]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton1" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1869488737]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT BROUGHT YOU TO TEXAS?"
+autowrap_mode = 2
+
+[node name="OptionButton2" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=1777081347]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+text = "WHAT WAS THE ORIGINAL ROLE OF THE MILITARY ON THE FRONTIER?"
+autowrap_mode = 2
+
+[node name="OptionButton3" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer" unique_id=2091812151]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT KIND OF MEN SERVED ON THE FRONTIER?"
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/Control/HBoxContainer" unique_id=2137600233]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 25
+
+[node name="OptionButton4" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=739832154]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "WHAT DO YOU THINK OF THE INDIANS YOU ENCOUNTERED?"
+autowrap_mode = 2
+
+[node name="OptionButton5" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=1708884724]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+text = "WHAT HAPPENED HERE AFTER THE CIVIL WAR?"
+autowrap_mode = 2
+
+[node name="OptionButton6" type="Button" parent="ScrollContainer/Control/HBoxContainer/VBoxContainer2" unique_id=496742721]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "HOW WERE THE INDIANS DEFEATED?"
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="ScrollContainer/Control" unique_id=1928363503]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = 672.0
+offset_right = 256.0
+offset_bottom = 752.0
+text = "WHO AM I?"
+
+[node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Control" unique_id=802456092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 112.0
+offset_right = 328.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.15151364, 0.4907472, 0.6531572, 1)
+
+[node name="Option1RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=2022680824]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "I was assigned to Texas in 1846 during the war with Mexico, and I fought in the battles of Palo Alto and Resaca de la Palma. Then the Army sent me to this area to search for natural roads, water and timber. On these journeys across the Texas plains, we discovered the source of the Red River and mapped the first trail for settlers moving further West. I guess I did all right, because that route is now called Marcy’s Trail, and it is the route followed by many going to the California Gold Rush in ’49, as well as the Butterfield Stage and the Goodnight-Loving Trail."
+
+[node name="Option2RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=1692021842]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "When the military first came to the Texas frontier, our mission was simply to monitor activities by all parties – Indians, settlers and traders – without getting directly involved. In 1851 I participated in establishing a line of forts on the frontier, including Fort Phantom, just a few miles from here. It was a strange time for the military. We were under strict orders, in the beginning, to not interfere at all. More than once, our patrols passed Indian bands with white captives crying and pleading for the soldiers to rescue them. Our men did some crying to, but they still weren’t allowed to interfere. After the Civil War, that policy changed."
+
+[node name="Option3RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=1955195514]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Much of our success was due to the help of scouts like Jim Ned and Black Beaver, who were Delaware Indians. We also met on friendly terms with many Comanche leaders, including Buffalo Hump and Sanaco, leader of a Comanche tribe called the Penateka, or “the honey eaters.” Later Sanaco decided to fight us and eventually government soldiers killed him up on the Pease River."
+
+[node name="Option4RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=115317647]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Officers were generally well-educated men. The enlisted men came from all walks of life. We had a lot of men fresh off the boats from Ireland and Germany. To them the military was a way to learn the language and start a new life in America. After the Civil War, we had black troops, called buffalo soldiers by the Indians, because of their curly hair and they were tough like the buffalo."
+
+[node name="Option5RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=435668523]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "After the Civil War, the army became the enforcer of national policy, and our job was to incorporate this area into the nation. Because settlers had moved well beyond our original forts, we built a new line of forts, which included Ft. Richardson, Ft. Griffin and Ft. Concho. Our mission was to enforce Indian treaties, keep things safe for settlers and encourage commerce. To do that we ended up having to fight those Indians who defied the national will."
+
+[node name="Option6RichTextLabel" type="RichTextLabel" parent="ScrollContainer/Control/ColorRect2" unique_id=19970598]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "A common misconception is that the government had thousands of soldiers fighting the Indians, but the truth was that we were small groups out on patrol, a long way from our posts and our supplies. To keep the troops and animals fed and the men equipped with ammunition, we established smaller outposts where the duty was both boring and dangerous. Battles with the Indians were usually short, intense and at very close range. In the long run, the Indians were defeated by a combination of tactics. To reduce their mobility, we were forced to drive away or kill their horses. That, combined with removing their food supply by slaughtering the buffalo, made it impossible for them to carry on as they always had."
+
+[node name="Label" type="Label" parent="ScrollContainer/Control" unique_id=1513639406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -400.0
+offset_right = 55.0
+offset_bottom = -352.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "RANDOLPH MARCY"
+
+[node name="Label2" type="Label" parent="ScrollContainer/Control" unique_id=1645995424]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -344.0
+offset_right = 49.0
+offset_bottom = -312.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_2t2b3")
+theme_override_font_sizes/font_size = 22
+text = "U.S. Army Explorer"
+
+[node name="LeftButton" type="Button" parent="ScrollContainer/Control" unique_id=1666128018]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 664.0
+offset_right = 48.0
+offset_bottom = 695.0
+text = "<"
+
+[node name="ExitButton" type="Button" parent="ScrollContainer/Control" unique_id=1130020110]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 264.0
+offset_right = 712.0
+offset_bottom = 295.0
+text = "X"
+
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton1" to="." method="_on_option_button_1_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton2" to="." method="_on_option_button_2_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer/OptionButton3" to="." method="_on_option_button_3_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton4" to="." method="_on_option_button_4_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton5" to="." method="_on_option_button_5_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/HBoxContainer/VBoxContainer2/OptionButton6" to="." method="_on_option_button_6_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/ExitButton" to="." method="_on_exit_button_pressed"]

@@ -4,7 +4,6 @@ var dragging := false
 var drag_start_y := 0.0
 var scroll_start := 0
 
-# Called when the node enters the scene tree for the first time.
 func _gui_input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch or (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT):
 		if event.pressed:
