@@ -14,10 +14,18 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=519110720]
-layout_mode = 0
-offset_left = 720.0
-offset_right = 2000.0
-offset_bottom = 720.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 360.0
+offset_top = -640.0
+offset_right = 1640.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
 rotation = 1.5707964
 stream = SubResource("VideoStreamTheora_00ugu")
 autoplay = true
@@ -26,27 +34,33 @@ script = ExtResource("1_x23uo")
 
 [node name="PauseButton" type="Button" parent="." unique_id=396709987]
 layout_mode = 1
-anchors_preset = 4
+anchors_preset = 8
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 32.0
+offset_left = -328.0
 offset_top = -24.0
-offset_right = 87.0
+offset_right = -273.0
 offset_bottom = 7.0
+grow_horizontal = 2
 grow_vertical = 2
 rotation = 1.5707964
 text = "Pause"
 
 [node name="FullscreenToggleButton" type="Button" parent="." unique_id=338785976]
 layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 64.59509
-offset_top = -120.0
-offset_right = 184.5951
-offset_bottom = -56.0
-grow_vertical = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = 520.0
+offset_right = -176.0
+offset_bottom = 584.0
+grow_horizontal = 2
+grow_vertical = 2
 rotation = 1.5707964
 text = "Exit Fullscreen"
 
