@@ -16,3 +16,7 @@ func _on_english_button_pressed() -> void:
 
 func _on_spanish_button_pressed() -> void:
 	TranslationServer.set_locale("es")
+
+
+func _on_brazil_portuguese_button_pressed() -> void:
+	TranslationServer.set_locale("pt_BR")

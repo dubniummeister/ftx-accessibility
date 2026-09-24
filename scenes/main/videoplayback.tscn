@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c08f7qs7yv6xs" path="res://scripts/video_stream_player.gd" id="1_x23uo"]
 
 [sub_resource type="VideoStreamTheora" id="VideoStreamTheora_00ugu"]
+file = "res://videos/bass_pro_shops_pyramid.ogg"
 
 [node name="VideoPlayback" type="Control" unique_id=1303729484]
 layout_mode = 3
@@ -50,3 +51,4 @@ rotation = 1.5707964
 text = "Exit Fullscreen"
 
 [connection signal="button_down" from="PauseButton" to="VideoStreamPlayer" method="_on_pause_button_button_down"]
+[connection signal="pressed" from="FullscreenToggleButton" to="VideoStreamPlayer" method="_on_fullscreen_toggle_button_pressed"]

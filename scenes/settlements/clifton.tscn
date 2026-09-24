@@ -1,17 +1,29 @@
 [gd_scene format=3 uid="uid://bymk1ur1tossk"]
 
-[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_rqb3r"]
+[ext_resource type="Script" uid="uid://dcg28lugqqdkg" path="res://scripts/spirit-guides/spiritguide-nochoice.gd" id="1_dpqmb"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_0bkbm"]
+[ext_resource type="Texture2D" uid="uid://b2n7g8esms33j" path="res://ui/images/frontier_settlements/frontier_settlements-bg.png" id="2_dpqmb"]
 [ext_resource type="Texture2D" uid="uid://clxxkvf4lh3kj" path="res://ui/images/spirit-guides/clifton-sg.png" id="3_rqb3r"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="4_errgo"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="5_dpqmb"]
 
-[node name="Satanta" type="Control" unique_id=893908093]
+[node name="Clifton" type="Control" unique_id=893908093]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rqb3r")
+script = ExtResource("1_dpqmb")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1272000540]
+layout_mode = 0
+offset_left = -592.0
+offset_top = -40.0
+offset_right = 1456.0
+offset_bottom = 1312.0
+texture = ExtResource("2_dpqmb")
+stretch_mode = 4
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
 layout_mode = 1
@@ -27,7 +39,7 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+color = Color(0.1275, 0.16220832, 0.25, 0.7058824)
 
 [node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_0bkbm")]
 layout_mode = 1
@@ -48,6 +60,7 @@ offset_left = 320.0
 offset_top = 408.0
 offset_right = 648.0
 offset_bottom = 512.0
+theme_override_fonts/font = ExtResource("4_errgo")
 theme_override_font_sizes/font_size = 22
 text = "Elizabeth Carter Clifton shares her lifetime of hardship and adversity on the frontier."
 horizontal_alignment = 1
@@ -59,6 +72,7 @@ offset_left = 320.0
 offset_top = 576.0
 offset_right = 648.0
 offset_bottom = 608.0
+theme_override_fonts/font = ExtResource("4_errgo")
 theme_override_font_sizes/font_size = 22
 text = "Read her story below."
 horizontal_alignment = 1
@@ -101,6 +115,7 @@ offset_right = 320.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("5_dpqmb")
 theme_override_font_sizes/normal_font_size = 20
 text = "Don’t think your staring’s gonna bother me. If you’re looking for a place to stay, I’m all full up. But if you’re looking for dinner, I got stew on the stove and plates for twenty.
 
@@ -129,6 +144,7 @@ offset_right = 138.0
 offset_bottom = -320.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_dpqmb")
 theme_override_font_sizes/font_size = 32
 text = "ELIZABETH CARTER CLIFTON"
 
@@ -145,6 +161,7 @@ offset_right = 49.0
 offset_bottom = -280.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_errgo")
 theme_override_font_sizes/font_size = 22
 text = "Captive who Escaped"
 

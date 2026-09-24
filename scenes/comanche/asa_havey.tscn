@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_25li2"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="1_mwyp4"]
 [ext_resource type="Texture2D" uid="uid://c2axnn2qmtluj" path="res://ui/images/spirit-guides/asa_havey-sg.png" id="2_25li2"]
+[ext_resource type="Texture2D" uid="uid://x53rp6woxqay" path="res://ui/images/comanche_empire/comanche_empire-bg.jpg" id="2_ttgrp"]
 [ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="4_m5570"]
 [ext_resource type="StyleBox" uid="uid://bytl1uakg2cys" path="res://resources/spirit-guide_button-style.tres" id="5_ttgrp"]
 [ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="6_lfvs8"]
@@ -15,6 +16,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_25li2")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1364880154]
+layout_mode = 0
+offset_left = -992.0
+offset_top = -64.0
+offset_right = 1176.0
+offset_bottom = 1512.0
+texture = ExtResource("2_ttgrp")
+stretch_mode = 5
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
 layout_mode = 1
@@ -30,7 +40,7 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+color = Color(0.1275, 0.16220832, 0.25, 0.7058824)
 
 [node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("1_mwyp4")]
 layout_mode = 1
@@ -131,7 +141,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("4_m5570")
 theme_override_font_sizes/normal_font_size = 20
-text = "\"Haa Haits\"! Hello, friend. Since long, long ago, Indians have come to the banks of the Concho River - which we call \"ebi hunubi\", Blue river - to camp, because it gives us water, wood, and a long rock cliff to protect us from the wind. While they were camped here, the Indians used their paints to tell their stories on the cliffs of Paint Rock. In this place are stories, some from tribes and languages long forgotten, pictures of the old ways, hunting the buffalo in the time before the horse, stalking him on foot with bow and arrow... Talking to the sun, Our Father, and asking for \"puha\", the medicine power that makes us strong.
+text = "\"Haa Haits\"! Hello, friend.
+Since long, long ago, Indians have come to the banks of the Concho River - which we call \"ebi hunubi\", Blue river - to camp, because it gives us water, wood, and a long rock cliff to protect us from the wind. While they were camped here, the Indians used their paints to tell their stories on the cliffs of Paint Rock. In this place are stories, some from tribes and languages long forgotten, pictures of the old ways, hunting the buffalo in the time before the horse, stalking him on foot with bow and arrow... Talking to the sun, Our Father, and asking for \"puha\", the medicine power that makes us strong.
 
 The paintings here and at other places on the Plains were drawn to remind us of our stories. We made no written words. Our stories are passed from generation by word of mouth. From old to young we tell these stories in the long nights of winter at places like this one, places that breathe with the history of our people."
 
@@ -226,6 +237,14 @@ offset_top = 664.0
 offset_right = 48.0
 offset_bottom = 695.0
 text = "<"
+
+[node name="RightButton" type="Button" parent="." unique_id=1947973891]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 672.0
+offset_right = 712.0
+offset_bottom = 703.0
+text = ">"
 
 [node name="ExitButton" type="Button" parent="." unique_id=1130020110]
 layout_mode = 1

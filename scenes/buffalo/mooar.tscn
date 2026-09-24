@@ -2,7 +2,11 @@
 
 [ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_rjpjc"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_8x2wn"]
+[ext_resource type="Texture2D" uid="uid://df8l40akws5a5" path="res://ui/images/buffalo_hide_trade/buffalo_hide_trade-bg.png" id="2_sv4wk"]
 [ext_resource type="Texture2D" uid="uid://dgslqyg1knu1t" path="res://ui/images/spirit-guides/mooar-sg.png" id="3_rjpjc"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="4_fynpx"]
+[ext_resource type="StyleBox" uid="uid://bytl1uakg2cys" path="res://resources/spirit-guide_button-style.tres" id="5_sv4wk"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="6_7rbic"]
 
 [node name="Mooar" type="Control" unique_id=893908093]
 layout_mode = 3
@@ -12,6 +16,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rjpjc")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1410098524]
+layout_mode = 0
+offset_left = -1080.0
+offset_top = -48.0
+offset_right = 1112.0
+offset_bottom = 1400.0
+texture = ExtResource("2_sv4wk")
+stretch_mode = 4
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
 layout_mode = 1
@@ -27,7 +40,7 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+color = Color(0.1275, 0.16220832, 0.25, 0.7058824)
 
 [node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_8x2wn")]
 layout_mode = 1
@@ -53,16 +66,25 @@ theme_override_constants/separation = 25
 [node name="OptionButton1" type="Button" parent="VBoxContainer" unique_id=1869488737]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_fynpx")
+theme_override_styles/normal = ExtResource("5_sv4wk")
 text = "VALUE OF THE BUFFALO"
 
 [node name="OptionButton2" type="Button" parent="VBoxContainer" unique_id=1777081347]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_fynpx")
+theme_override_styles/normal = ExtResource("5_sv4wk")
 text = "BUFFALO AS A WAY OF LIFE"
 
 [node name="OptionButton3" type="Button" parent="VBoxContainer" unique_id=2091812151]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.15686275, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("4_fynpx")
+theme_override_styles/normal = ExtResource("5_sv4wk")
 text = "LIFE AFTER THE BUFFALO IS GONE"
 
 [node name="Button" type="Button" parent="." unique_id=1928363503]
@@ -103,6 +125,7 @@ offset_right = 320.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_fynpx")
 theme_override_font_sizes/normal_font_size = 20
 text = "I was just a big kid off the farm when I moved to Kansas in 1870 from back East. Keeping the railroad crews in meat by killing a few buffalo was a way I could make a living, so that’s what I did. We sold a few hides for lap robes, but there wasn’t much demand. One day, I had an idea that would change all that. I sent a few hides to my brother back in New York to see if the commercial tanneries would buy them to make leather.
 
@@ -124,6 +147,7 @@ offset_right = 320.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_fynpx")
 theme_override_font_sizes/normal_font_size = 20
 text = "Back then, we didn’t think the great buffalo herds could be wiped out. Once, I saw a herd north of here that was seven or eight miles wide - maybe a hundred miles long. There were millions of them!
 
@@ -147,6 +171,7 @@ offset_right = 320.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("4_fynpx")
 theme_override_font_sizes/normal_font_size = 20
 text = "Well now, them bunches of shaggies are smaller and smaller --- and further apart. I can hunt for days without seeing any buffalo. I can’t afford to keep paying these skinners, if there’s nothing to skin. But buffalo was brought me and old Pete Snyder to this fine piece of Texas. Pete’s done well as a merchant, even has a town named after him. I figure building a cattle ranch would make a good life’s work for me. Without the buffalo, this grass could provide for a lot of cattle, so I think I’m going to give that a go. I reckon it’s a good thing I hung onto the money I made."
 
@@ -163,6 +188,7 @@ offset_right = 55.0
 offset_bottom = -320.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_fynpx")
 theme_override_font_sizes/font_size = 32
 text = "J. WRIGHT MOOAR"
 
@@ -179,6 +205,7 @@ offset_right = 49.0
 offset_bottom = -280.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_7rbic")
 theme_override_font_sizes/font_size = 22
 text = "Buffalo Hunter"
 

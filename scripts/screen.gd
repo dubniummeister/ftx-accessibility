@@ -18,10 +18,12 @@ func _ready() -> void:
 
 func _on_language_select_toggled(is_collapsed: bool) -> void:
 	var offset = collapse_amount if is_collapsed else 0.0
-	custom_minimum_size.y = base_min_size_y - offset
+	var target_min_size_y = base_min_size_y - offset
+	
+	var size_tween = create_tween()
+	size_tween.tween_property(self, "custom_minimum_size:y", target_min_size_y, 1.0)
+	
 	for node in nodes_to_shift:
 		var target_y = original_positions[node] - offset
-		var tween = create_tween()
-		if is_collapsed:
-			tween.tween_interval(0.5)
-		tween.tween_property(node, "position:y", target_y, 1.0)
+		var node_tween = create_tween()
+		node_tween.tween_property(node, "position:y", target_y, 1.0)

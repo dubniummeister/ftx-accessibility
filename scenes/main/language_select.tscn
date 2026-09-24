@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cfp1nowo8gg02" path="res://ui/language_flags/us-english.png" id="1_7dyjj"]
 [ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="1_n8i8h"]
-[ext_resource type="Script" uid="uid://cq8vfbq6ib6no" path="res://scenes/main/language_select.gd" id="1_njxp2"]
+[ext_resource type="Script" uid="uid://cq8vfbq6ib6no" path="res://scripts/language_select.gd" id="1_njxp2"]
 [ext_resource type="Texture2D" uid="uid://xigag2s6pd80" path="res://ui/language_flags/mexican-spanish.png" id="2_n8i8h"]
 [ext_resource type="Texture2D" uid="uid://dtaa524jrvyl3" path="res://ui/language_flags/german.png" id="3_njxp2"]
 [ext_resource type="Texture2D" uid="uid://6pgh4wo7gm1p" path="res://ui/language_flags/brazil-portuguese.png" id="4_hxvbf"]
@@ -276,4 +276,5 @@ libraries/ = SubResource("AnimationLibrary_xb0ru")
 
 [connection signal="pressed" from="ColorRect/CollapseControl/GridContainer/EnglishButton" to="." method="_on_english_button_pressed"]
 [connection signal="pressed" from="ColorRect/CollapseControl/GridContainer/SpanishButton" to="." method="_on_spanish_button_pressed"]
+[connection signal="pressed" from="ColorRect/CollapseControl/GridContainer/BrazilPortugueseButton" to="." method="_on_brazil_portuguese_button_pressed"]
 [connection signal="toggled" from="ColorRect/MinimizeButton" to="." method="_on_minimize_button_toggled"]

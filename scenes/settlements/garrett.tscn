@@ -1,17 +1,29 @@
 [gd_scene format=3 uid="uid://djofpgd3samre"]
 
-[ext_resource type="Script" uid="uid://be8i8kpbwcyak" path="res://scripts/spirit-guides/spiritguide-3choice.gd" id="1_gxcbq"]
+[ext_resource type="Script" uid="uid://dcg28lugqqdkg" path="res://scripts/spirit-guides/spiritguide-nochoice.gd" id="1_r2qjs"]
+[ext_resource type="Texture2D" uid="uid://b2n7g8esms33j" path="res://ui/images/frontier_settlements/frontier_settlements-bg.png" id="2_r2qjs"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="2_unny4"]
 [ext_resource type="Texture2D" uid="uid://r1svbep1l6et" path="res://ui/images/spirit-guides/garrett-sg.png" id="3_gxcbq"]
+[ext_resource type="FontFile" uid="uid://cbt4kueiveqsa" path="res://fonts/georgia.ttf" id="4_su84j"]
+[ext_resource type="FontFile" uid="uid://c410nw6dfsnt7" path="res://fonts/georgiab.ttf" id="5_r2qjs"]
 
-[node name="Satanta" type="Control" unique_id=893908093]
+[node name="Garrett" type="Control" unique_id=893908093]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_gxcbq")
+script = ExtResource("1_r2qjs")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=889206545]
+layout_mode = 0
+offset_left = -592.0
+offset_top = -40.0
+offset_right = 1456.0
+offset_bottom = 1312.0
+texture = ExtResource("2_r2qjs")
+stretch_mode = 4
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=760633927]
 layout_mode = 1
@@ -27,7 +39,7 @@ offset_bottom = 640.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.12480556, 0.15905085, 0.2479788, 1)
+color = Color(0.1275, 0.16220832, 0.25, 0.7058824)
 
 [node name="LanguageSelect" parent="." unique_id=1731127905 instance=ExtResource("2_unny4")]
 layout_mode = 1
@@ -48,6 +60,7 @@ offset_left = 320.0
 offset_top = 408.0
 offset_right = 648.0
 offset_bottom = 512.0
+theme_override_fonts/font = ExtResource("4_su84j")
 theme_override_font_sizes/font_size = 22
 text = "Pat Garrett tells the story of how he came to Texas and how he killed Billy the Kid."
 horizontal_alignment = 1
@@ -59,6 +72,7 @@ offset_left = 320.0
 offset_top = 576.0
 offset_right = 648.0
 offset_bottom = 608.0
+theme_override_fonts/font = ExtResource("4_su84j")
 theme_override_font_sizes/font_size = 22
 text = "Read his story below."
 horizontal_alignment = 1
@@ -101,6 +115,7 @@ offset_right = 320.0
 offset_bottom = 256.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("5_r2qjs")
 theme_override_font_sizes/normal_font_size = 20
 text = "Welcome to the Beehive Saloon. I'm just fillin’ in here for Dutch. He's eatin’ over at Skeeter's tent. Name’s Pat Garrett and to get right to it, I guess I'm best known for shootin’ Billy the Kid. But, lots of things happened before me and Billy met in that pitch black room -- when I had about two seconds to kill Billy before he killed me first, so that's what I did.
 
@@ -133,6 +148,7 @@ offset_right = 55.0
 offset_bottom = -320.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_r2qjs")
 theme_override_font_sizes/font_size = 32
 text = "PAT GARRETT"
 
@@ -149,6 +165,7 @@ offset_right = 49.0
 offset_bottom = -280.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_su84j")
 theme_override_font_sizes/font_size = 22
 text = "Buffalo Hunter and Lawman"
 

@@ -5,8 +5,9 @@
 [ext_resource type="Script" uid="uid://bvymp5quuy48u" path="res://scripts/main_menu.gd" id="1_rf05u"]
 [ext_resource type="PackedScene" uid="uid://dftwliolh6j2j" path="res://scenes/main/language_select.tscn" id="1_ygj4d"]
 [ext_resource type="Texture2D" uid="uid://dx3ur0dwtkdfo" path="res://ui/images/spirit-guides/satanta-sg.png" id="2_byqcc"]
-[ext_resource type="Script" uid="uid://dci7b4h1ucarr" path="res://scenes/main/screen.gd" id="3_7orsx"]
+[ext_resource type="Script" uid="uid://dci7b4h1ucarr" path="res://scripts/screen.gd" id="3_7orsx"]
 [ext_resource type="Texture2D" uid="uid://c65f6s125e7m6" path="res://ui/images/spirit-guides/parker-sg.png" id="3_s2sug"]
+[ext_resource type="Texture2D" uid="uid://x53rp6woxqay" path="res://ui/images/comanche_empire/comanche_empire-bg.jpg" id="4_pkvy1"]
 [ext_resource type="Texture2D" uid="uid://dgslqyg1knu1t" path="res://ui/images/spirit-guides/mooar-sg.png" id="4_ygj4d"]
 [ext_resource type="Texture2D" uid="uid://bfm5pjfqm07a6" path="res://ui/images/spirit-guides/marcy-sg.png" id="5_001j1"]
 [ext_resource type="Texture2D" uid="uid://lr8bbf3noflo" path="res://ui/images/spirit-guides/mackenzie-sg.png" id="6_rf05u"]
@@ -49,13 +50,22 @@ tile_scroll_hint = true
 script = ExtResource("1_001j1")
 
 [node name="Control" type="Control" parent="ScrollContainer" unique_id=1424001601 node_paths=PackedStringArray("language_select", "collapse_control", "nodes_to_shift")]
-custom_minimum_size = Vector2(720, 1408)
+custom_minimum_size = Vector2(720, 1448)
 layout_mode = 2
 mouse_filter = 1
 script = ExtResource("3_7orsx")
 language_select = NodePath("LanguageSelect")
 collapse_control = NodePath("LanguageSelect/ColorRect/CollapseControl")
 nodes_to_shift = [NodePath("ColorRect"), NodePath("ColorRect2"), NodePath("SpiritGuidesLabel1"), NodePath("SpiritGuidesLabel2"), NodePath("SpiritGuidesLabel3"), NodePath("SpiritGuidesLabel4"), NodePath("SpiritGuidesLabel5")]
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control" unique_id=1210782729]
+layout_mode = 0
+offset_left = -992.0
+offset_top = -64.0
+offset_right = 1176.0
+offset_bottom = 1512.0
+texture = ExtResource("4_pkvy1")
+stretch_mode = 5
 
 [node name="ColorRect" type="ColorRect" parent="ScrollContainer/Control" unique_id=378191788]
 layout_mode = 1
@@ -67,11 +77,11 @@ anchor_bottom = 0.5
 offset_left = -360.0
 offset_top = -704.0
 offset_right = 360.0
-offset_bottom = 1152.0
+offset_bottom = 876.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0.045652755, 0.0678606, 0.116923116, 1)
+color = Color(0.0468, 0.06998001, 0.12, 0.7058824)
 
 [node name="ColorRect2" type="ColorRect" parent="ScrollContainer/Control" unique_id=2006911679]
 layout_mode = 1
@@ -81,9 +91,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -336.0
-offset_top = -336.0
+offset_top = -368.0
 offset_right = 336.0
-offset_bottom = -200.0
+offset_bottom = -232.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -130,9 +140,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -264.0
-offset_top = -168.0
+offset_top = -200.0
 offset_right = -87.0
-offset_bottom = -140.0
+offset_bottom = -172.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -205,9 +215,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 88.0
-offset_top = -168.0
+offset_top = -200.0
 offset_right = 269.0
-offset_bottom = -140.0
+offset_bottom = -172.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -279,9 +289,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -288.0
-offset_top = 176.0
+offset_top = 144.0
 offset_right = -63.0
-offset_bottom = 204.0
+offset_bottom = 172.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -353,9 +363,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 56.0
-offset_top = 176.0
+offset_top = 144.0
 offset_right = 293.0
-offset_bottom = 204.0
+offset_bottom = 172.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -427,9 +437,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -100.0
-offset_top = 480.0
+offset_top = 448.0
 offset_right = 100.0
-offset_bottom = 508.0
+offset_bottom = 476.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
@@ -517,6 +527,21 @@ horizontal_alignment = 1
 [node name="LanguageSelect" parent="ScrollContainer/Control" unique_id=208910980 instance=ExtResource("1_ygj4d")]
 layout_mode = 1
 
+[node name="TestButton" type="Button" parent="ScrollContainer/Control" unique_id=1254680023]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -436.0
+offset_right = 40.0
+offset_bottom = -405.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Video Test"
+
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/AsaButton" to="." method="_on_asa_button_pressed"]
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel1/HBoxContainer/SatantaButton" to="." method="_on_satanta_button_pressed"]
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel2/HBoxContainer2/ParkerButton" to="." method="_on_parker_button_pressed"]
@@ -528,5 +553,6 @@ layout_mode = 1
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/BrittButton" to="." method="_on_britt_button_pressed"]
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/GarrettButton" to="." method="_on_garrett_button_pressed"]
 [connection signal="pressed" from="ScrollContainer/Control/SpiritGuidesLabel5/HBoxContainer2/ClftonButton" to="." method="_on_clfton_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/Control/TestButton" to="." method="_on_test_button_pressed"]
 
 [editable path="ScrollContainer/Control/LanguageSelect"]
